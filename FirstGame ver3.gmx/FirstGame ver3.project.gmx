@@ -55,6 +55,7 @@
       <object>objects\objEnemyArmor</object>
     </objects>
     <object>objects\objetoAlvaro</object>
+    <object>objects\objetoJavier</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTest</room>
