@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndTimeStop</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Interface">
       <sprite>sprites\sprRerollDice</sprite>
@@ -52,8 +54,6 @@
     <objects name="Room">
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
-      <object>objects\objEnableShader</object>
-      <object>objects\objDisableShader</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>

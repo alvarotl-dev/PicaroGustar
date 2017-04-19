@@ -29,6 +29,10 @@
 
 randomize();
 
+buttonTime=false;
+global.timeActive = false;
+timeStopAvailable=1;
+
 //for moving
 vel=4;
 accel=1;
@@ -44,6 +48,29 @@ reroll=5;
 rerollCount=0;
 rerollCountLimit=5;
 global.newRoom=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>buttonTime=false;
 </string>
           </argument>
         </arguments>
@@ -373,11 +400,30 @@ str1 = reroll;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_check_button(mb_left)
+            <string>///Time stop
+
+if (mouse_check_button(mb_left) &amp;&amp; timeStopAvailable==1)
 {
-    instance_create(x,y,objEnableShader);
+    buttonTime=true;
+    timeStopAvailable=0;
+    alarm[0]=150;
+    audio_play_sound(sndTimeStop,1,false);
 }
-else instance_create(x,y,objDisableShader);
+if(buttonTime)
+{
+    global.timeActive = !global.timeActive;
+    /*instance_create(x,y,objEnableShader);
+    timeStopAvailable=0;*/
+}
+
+    if (global.timeActive)
+    {
+        shader_set(shader0);
+    }
+    else
+    {
+        shader_reset();
+    }
 </string>
           </argument>
         </arguments>

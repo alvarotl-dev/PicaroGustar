@@ -30,13 +30,13 @@ void main()
 {
     vec4 originalColor=texture2D(gm_BaseTexture,v_vTexcoord);
     
-    /*float outputRed=dump01((1.0-originalColor.r));
-    float outputGreen=dump01((1.0-originalColor.g));
-    float outputBlue=dump01((1.0-originalColor.b));*/
+    float outputRed=1.0-originalColor.r;
+    float outputGreen=1.0-originalColor.g;
+    float outputBlue=1.0-originalColor.b;
     float outputAlpha=originalColor.a;
-    float average=(originalColor.r+originalColor.b+originalColor.g)/3.0;
+    //float average=(originalColor.r+originalColor.b+originalColor.g)/3.0;
     
-    vec4 outputColor=vec4(average,average,average,outputAlpha);
+    vec4 outputColor=vec4(outputRed,outputGreen,outputBlue,outputAlpha);
     
     gl_FragColor = outputColor;
     

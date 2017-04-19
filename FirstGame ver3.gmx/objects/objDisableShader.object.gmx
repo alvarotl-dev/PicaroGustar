@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shader_reset();
-instance_destroy();
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
