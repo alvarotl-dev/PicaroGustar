@@ -39,10 +39,6 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
-    <backgrounds name="jjj">
-      <background>background\background1</background>
-    </backgrounds>
-    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -64,13 +60,10 @@
     <objects name="Enemies">
       <object>objects\objEnemyParent</object>
       <object>objects\objEnemyArmor</object>
-      <object>objects\objEnemyPursuer</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
-    <room>rooms\roomTest</room>
-    <room>rooms\room1</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
