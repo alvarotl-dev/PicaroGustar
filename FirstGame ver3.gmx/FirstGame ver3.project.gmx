@@ -54,6 +54,7 @@
     <objects name="Enemies">
       <object>objects\objEnemyArmor</object>
     </objects>
+    <object>objects\HOLA_ALVARO_JAJA_SOY_JABIER</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTest</room>
