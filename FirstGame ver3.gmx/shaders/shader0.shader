@@ -24,19 +24,30 @@ void main()
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
+float dump01 (float);
+
 void main()
 {
     vec4 originalColor=texture2D(gm_BaseTexture,v_vTexcoord);
     
-    float outputRed=(255.0-originalColor.r);
-    float outputGreen=(255.0-originalColor.g);
-    float outputBlue=(255.0-originalColor.b);
+    /*float outputRed=dump01((1.0-originalColor.r));
+    float outputGreen=dump01((1.0-originalColor.g));
+    float outputBlue=dump01((1.0-originalColor.b));*/
     float outputAlpha=originalColor.a;
-    //float average=(originalColor.r+originalColor.b+originalColor.g)/3.0;
+    float average=(originalColor.r+originalColor.b+originalColor.g)/3.0;
     
-    vec4 outputColor=vec4(outputRed,outputGreen,outputBlue,outputAlpha);
+    vec4 outputColor=vec4(average,average,average,outputAlpha);
     
     gl_FragColor = outputColor;
     
     //gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 }
+/*
+float dump01(float number)
+{
+    if (number > 1.0)
+        return 1.0;
+    if (number < 0.0)
+        return 0.0;
+    return number;
+}*/
