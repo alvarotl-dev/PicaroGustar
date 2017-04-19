@@ -4,12 +4,21 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\xasdawdawd</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\asdawda</sprite>
+    <sprite>sprites\Dipotae</sprite>
+    <sprite>sprites\tuputamae</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\xxsxsx</background>
+  </backgrounds>
   <paths name="paths"/>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+  </shaders>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
