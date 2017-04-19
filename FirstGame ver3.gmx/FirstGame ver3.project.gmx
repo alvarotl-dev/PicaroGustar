@@ -26,6 +26,7 @@
         <sprite>sprites\sprArmorWalkRight</sprite>
         <sprite>sprites\sprArmorWalkUp</sprite>
       </sprites>
+      <sprite>sprites\sprPursuerWalkDown</sprite>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>

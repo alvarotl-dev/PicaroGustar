@@ -27,6 +27,24 @@
             <kind>1</kind>
             <string>///Variables
 global.newRoom=1;
+instance_create(256,32,objReroll);
+with (objReroll) 
+{
+    image_xscale=0.4;
+    image_yscale=0.4;
+}
+instance_create(608,416,objLeftPowerUp);
+with (objLeftPowerUp) 
+{
+    image_xscale=0.4;
+    image_yscale=0.4;
+}
+instance_create(672,416,objRightPowerUp);
+with (objRightPowerUp) 
+{
+    image_xscale=0.4;
+    image_yscale=0.4;
+}
 </string>
           </argument>
         </arguments>
