@@ -54,7 +54,11 @@
     <objects name="Enemies">
       <object>objects\objEnemyArmor</object>
     </objects>
+<<<<<<< HEAD
     <object>objects\HOLA_ALVARO_JAJA_SOY_JABIER</object>
+=======
+    <object>objects\objetoAlvaro</object>
+>>>>>>> ec99ac21202fbe9c2ff7a178e957ca2b9dc684a6
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTest</room>
