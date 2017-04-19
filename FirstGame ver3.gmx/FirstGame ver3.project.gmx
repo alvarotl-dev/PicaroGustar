@@ -26,7 +26,12 @@
         <sprite>sprites\sprArmorWalkRight</sprite>
         <sprite>sprites\sprArmorWalkUp</sprite>
       </sprites>
-      <sprite>sprites\sprPursuerWalkDown</sprite>
+      <sprites name="KnifeThrower">
+        <sprite>sprites\sprKnifeThrowerWalkDown</sprite>
+        <sprite>sprites\sprKnifeThrowerWalkUp</sprite>
+        <sprite>sprites\sprKnifeThrowerWalkLeft</sprite>
+        <sprite>sprites\sprKnifeThrowerWalkRight</sprite>
+      </sprites>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>
