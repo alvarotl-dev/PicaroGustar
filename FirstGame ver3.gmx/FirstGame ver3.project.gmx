@@ -42,6 +42,9 @@
     <background>background\defaultRoomBackground</background>
   </backgrounds>
   <paths name="paths"/>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\fontReroll</font>
   </fonts>
@@ -49,6 +52,8 @@
     <objects name="Room">
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
+      <object>objects\objEnableShader</object>
+      <object>objects\objDisableShader</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
