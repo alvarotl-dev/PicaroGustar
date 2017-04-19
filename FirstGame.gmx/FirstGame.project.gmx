@@ -19,6 +19,9 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\xasd</font>
+  </fonts>
   <objects name="objects">
     <object>objects\kajaaxde</object>
   </objects>
