@@ -57,6 +57,7 @@
     <object>objects\objetoAlvaro</object>
     <object>objects\objetoJavier</object>
     <object>objects\ObjetoBasura</object>
+    <object>objects\objetoB2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomTest</room>
