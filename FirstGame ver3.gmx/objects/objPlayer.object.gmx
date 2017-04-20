@@ -31,7 +31,7 @@ randomize();
 
 buttonTime=false;
 global.timeActive = false;
-timeStopAvailable=1;
+timeStopAvailable=0;
 
 //for moving
 vel=4;
@@ -70,7 +70,8 @@ global.newRoom=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>buttonTime=false;
+            <string>///time stop control
+buttonTime=false;
 </string>
           </argument>
         </arguments>
@@ -282,6 +283,10 @@ if (global.newRoom==1)
 switch (leftPowerUp)
     {
     case 0: //starting with no power up
+       with (objLeftPowerUp)
+        {
+            sprite_index=sprNoPowerUp;
+        }
        break;
     case 1: //punch
         with (objLeftPowerUp)
@@ -312,7 +317,13 @@ switch (leftPowerUp)
 switch (rightPowerUp)
     {
     case 0: //starting with no power up
+        with (objRightPowerUp)
+        {
+            sprite_index=sprNoPowerUp;
+        }
+        break;
     case 1: //time stop
+        timeStopAvailable=1;
         with (objRightPowerUp)
         {
             sprite_index=sprTimeStop;
@@ -325,12 +336,14 @@ switch (rightPowerUp)
         }
        break;
     case 3: //2nd chance to live
+        timeStopAvailable=1;
         with (objRightPowerUp)
         {
             sprite_index=sprTimeStop;
         }
        break;
    case 4: //shield
+        timeStopAvailable=1;
         with (objRightPowerUp)
         {
             sprite_index=sprTimeStop;
@@ -401,13 +414,13 @@ str1 = reroll;
           <argument>
             <kind>1</kind>
             <string>///Time stop
-
-if (mouse_check_button(mb_left) &amp;&amp; timeStopAvailable==1)
+if (mouse_check_button(mb_right) &amp;&amp; timeStopAvailable==1)
 {
     buttonTime=true;
     timeStopAvailable=0;
     alarm[0]=150;
     audio_play_sound(sndTimeStop,1,false);
+    rightPowerUp=0;
 }
 if(buttonTime)
 {
