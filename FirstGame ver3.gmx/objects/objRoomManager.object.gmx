@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Variables
 global.newRoom=1;
+global.roomChange=0;
 
 //creates instances of player's power ups and rerolls 
 instance_create(256,32,objReroll);
