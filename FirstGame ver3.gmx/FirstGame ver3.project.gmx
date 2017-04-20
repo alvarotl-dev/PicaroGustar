@@ -19,6 +19,7 @@
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
+      <sprite>sprites\sprPlayerTimeStop</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Armor">
