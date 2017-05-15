@@ -31,6 +31,7 @@ global.newRoom=1;
 buttonTime=false;
 global.timeActive = false;
 timeStopAvailable=0;
+global.canAttack = 1;
 
 //for moving
 vel=4;
@@ -235,8 +236,9 @@ if mouse_check_button_released(mb_left)
     
        break;
     case 2: //sword
-    
-       break;
+        if(global.canAttack==1)
+            SwordAttack();
+        break;
     case 3: //fireball
     
        break;

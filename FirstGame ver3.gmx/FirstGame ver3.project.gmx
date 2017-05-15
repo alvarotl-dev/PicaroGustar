@@ -41,12 +41,16 @@
       <sprite>sprites\sprRoomChange</sprite>
       <sprite>sprites\sprRoomStart</sprite>
     </sprites>
+    <sprite>sprites\sprSwordAttack</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
     <background>background\defaultRoomBackground</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\SwordAttack.gml</script>
+  </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
@@ -63,6 +67,7 @@
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
+      <object>objects\objSwordAttack</object>
     </objects>
     <objects name="Interface">
       <object>objects\objRightPowerUp</object>
