@@ -18,6 +18,8 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
+      <sprite>sprites\sprPlayerPunch</sprite>
+      <sprite>sprites\sprPlayerSword</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
       <sprite>sprites\sprPlayerTimeStop</sprite>
     </sprites>
@@ -50,8 +52,51 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\SwordAttack.gml</script>
-    <script>scripts\isAnimationFinished.gml</script>
+    <scripts name="State Machine">
+      <script>scripts\StateMachine.gml</script>
+      <script>scripts\EnterCurrentState.gml</script>
+      <script>scripts\ExitCurrentState.gml</script>
+      <script>scripts\UpdateCurrentState.gml</script>
+      <script>scripts\IsAnimationFinished.gml</script>
+    </scripts>
+    <scripts name="States">
+      <scripts name="Movement">
+        <script>scripts\StateControlEnter.gml</script>
+        <script>scripts\StateControlExit.gml</script>
+        <script>scripts\StateControlUpdate.gml</script>
+      </scripts>
+      <scripts name="Punch attack">
+        <script>scripts\StatePunchEnter.gml</script>
+        <script>scripts\StatePunchExit.gml</script>
+        <script>scripts\StatePunchUpdate.gml</script>
+      </scripts>
+      <scripts name="Sword attack">
+        <script>scripts\StateSwordEnter.gml</script>
+        <script>scripts\StateSwordExit.gml</script>
+        <script>scripts\StateSwordUpdate.gml</script>
+      </scripts>
+      <scripts name="State time stop">
+        <script>scripts\StateTimeStopEnter.gml</script>
+        <script>scripts\StateTimeStopExit.gml</script>
+        <script>scripts\StateTimeStopUpdate.gml</script>
+      </scripts>
+      <scripts name="State invulnerability">
+        <script>scripts\StateInvulnerabilityEnter.gml</script>
+        <script>scripts\StateInvulnerabilityExit.gml</script>
+        <script>scripts\StateInvulnerabilityUpdate.gml</script>
+      </scripts>
+      <scripts name="State being hit">
+        <script>scripts\StateHitEnter.gml</script>
+        <script>scripts\StateHitExit.gml</script>
+        <script>scripts\StateHitUpdate.gml</script>
+        <script>scripts\HitPlayer.gml</script>
+      </scripts>
+      <scripts name="State death">
+        <script>scripts\StateDeathEnter.gml</script>
+        <script>scripts\StateDeathExit.gml</script>
+        <script>scripts\StateDeathUpdate.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -70,7 +115,6 @@
     <objects name="Player">
       <object>objects\objPlayer</object>
       <object>objects\objSwordAttack</object>
-      <object>objects\objPunchAttack</object>
     </objects>
     <objects name="Interface">
       <object>objects\objRightPowerUp</object>
@@ -79,6 +123,7 @@
     </objects>
     <objects name="Enemies">
       <object>objects\objEnemyParent</object>
+      <object>objects\objKillingThingParent</object>
       <object>objects\objEnemyArmor</object>
     </objects>
   </objects>

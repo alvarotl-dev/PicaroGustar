@@ -27,18 +27,23 @@
             <kind>1</kind>
             <string>///Variables
 randomize();
+
+maxSpeed=6;
+sp=4;
+accel=1;
+state=0;
+justEntered=1;
+nextState=0;
+timeToAllowHits=0;
+
 global.newRoom=1;
 buttonTime=false;
 global.timeActive = false;
 timeStopAvailable=0;
 global.canAttack = 1;
 
-//for moving
-vel=4;
-accel=1;
-maxVel=6;
-
 //is the character alive?
+hpPlayer=5;
 global.alive=true;
 
 //power ups
@@ -118,6 +123,7 @@ buttonTime=false;
           <argument>
             <kind>1</kind>
             <string>///Movement
+
 //Handle inputs to calculate the target speed
 targetVelX=0;
 targetVelY=0;
@@ -126,20 +132,20 @@ if (global.alive==true)
 {
 if(keyboard_check(vk_left)||keyboard_check(ord('A')))
 {
-    targetVelX=-maxVel;
+    targetVelX=-maxSpeed;
 }
 if(keyboard_check(vk_right)||keyboard_check(ord('D')))
 {
-    targetVelX=maxVel;
+    targetVelX=maxSpeed;
 }
     
 if(keyboard_check(vk_up)||keyboard_check(ord('W')))
 {
-    targetVelY=-maxVel;
+    targetVelY=-maxSpeed;
 }
 if(keyboard_check(vk_down)||keyboard_check(ord('S')))
 {
-    targetVelY=maxVel;
+    targetVelY=maxSpeed;
 }
     
 diffVelX=clamp(targetVelX-hspeed,-accel,accel);
@@ -224,8 +230,8 @@ if(place_meeting(x+hspeed, y, objInvWall)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Actions
-
+            <string>///ActionsERASED
+/*
 if mouse_check_button_released(mb_left)
 {
     switch (leftPowerUp)
@@ -268,7 +274,7 @@ if mouse_check_button_released(mb_right)
        break;
     }
 }
-
+*/
 </string>
           </argument>
         </arguments>
@@ -396,6 +402,54 @@ if(keyboard_check_released(ord('R')) &amp;&amp; global.reroll&gt;0)
 if(keyboard_check_released(ord('F')))
 {
     global.reroll = 5;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///StateMachine
+StateMachine();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Update the variable controlling wether we can be hit
+
+if (timeToAllowHits&gt;0)
+{
+    --timeToAllowHits;
 }
 </string>
           </argument>
