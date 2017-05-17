@@ -67,6 +67,11 @@
       <script>scripts\UpdateCurrentState.gml</script>
       <script>scripts\IsAnimationFinished.gml</script>
     </scripts>
+    <scripts name="Right State Machine">
+      <script>scripts\RightStateMachine.gml</script>
+      <script>scripts\ExitCurrentStateRight.gml</script>
+      <script>scripts\UpdateCurrentStateRight.gml</script>
+    </scripts>
     <scripts name="States">
       <scripts name="Control">
         <script>scripts\StateControlEnter.gml</script>
@@ -104,11 +109,6 @@
         <script>scripts\StateDeathExit.gml</script>
         <script>scripts\StateDeathUpdate.gml</script>
       </scripts>
-    </scripts>
-    <scripts name="Right State Machine">
-      <script>scripts\RightStateMachine.gml</script>
-      <script>scripts\ExitCurrentStateRight.gml</script>
-      <script>scripts\UpdateCurrentStateRight.gml</script>
     </scripts>
     <script>scripts\CheckCollision.gml</script>
   </scripts>
