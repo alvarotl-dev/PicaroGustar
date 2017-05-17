@@ -21,10 +21,16 @@ else if (image_index==5)
 }
 */
 ableToMove=0;
+/*
+if (CheckCollision(3)==0)
+{
+    speed=speed*(-1);  
+}*/
+
 if (speed>0)
-    speed-=2;
+    speed-=1;
     
-if (IsAnimationFinished())
+if (speed = 0 || IsAnimationFinished())
 {
     nextState=0;
 }
