@@ -14,12 +14,9 @@ if (mouse_check_button_released(mb_left))
             //if(global.canAttack==1)
                 nextState=2;
             break;
-        case 3: //fireball
-        
+        default:
+            show_debug_message("State enter not implemented for state " + string(state));
             break;
-       case 4: //iceball
-        
-           break;
     }
 }
 
@@ -29,16 +26,13 @@ if mouse_check_button_released(mb_right)
     {
         case 0: //starting with no power up
         case 1: //time stop
-            nextState=3;
+            nextStateR=1;
             break;
         case 2: //invulnerability
-            nextState=4;
+            nextStateR=2;
             break;
-        case 3: //2nd chance to live
-        
-            break;
-        case 4: //shield
-        
+        default:
+            show_debug_message("State enter not implemented for state " + string(state));
             break;
     }
 }

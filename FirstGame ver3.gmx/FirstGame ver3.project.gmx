@@ -52,7 +52,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="State Machine">
+    <scripts name="Left State Machine">
       <script>scripts\StateMachine.gml</script>
       <script>scripts\EnterCurrentState.gml</script>
       <script>scripts\ExitCurrentState.gml</script>
@@ -60,7 +60,7 @@
       <script>scripts\IsAnimationFinished.gml</script>
     </scripts>
     <scripts name="States">
-      <scripts name="Movement">
+      <scripts name="Control">
         <script>scripts\StateControlEnter.gml</script>
         <script>scripts\StateControlExit.gml</script>
         <script>scripts\StateControlUpdate.gml</script>
@@ -96,6 +96,11 @@
         <script>scripts\StateDeathExit.gml</script>
         <script>scripts\StateDeathUpdate.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Right State Machine">
+      <script>scripts\RightStateMachine.gml</script>
+      <script>scripts\ExitCurrentStateRight.gml</script>
+      <script>scripts\UpdateCurrentStateRight.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">

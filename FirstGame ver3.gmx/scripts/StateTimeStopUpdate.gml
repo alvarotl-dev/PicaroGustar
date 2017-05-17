@@ -4,5 +4,5 @@ if (buttonTime=false)
 {
     if (instance_exists(objEnemyParent))
         objEnemyParent.velMod=1;
-    nextState=0;
+    nextStateR=0;
 }

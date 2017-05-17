@@ -15,15 +15,3 @@ if (nextState!=state)
     //enter the new state
     EnterCurrentState();
 }
-
-if (nextStateR!=stateR)
-{
-    //first we have to exit the current state
-    ExitCurrentState();
-    
-    //change the state
-    stateR=nextStateR;
-    
-    //enter the new state
-    EnterCurrentState();
-}

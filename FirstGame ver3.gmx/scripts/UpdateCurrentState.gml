@@ -1,8 +1,6 @@
-//calls the appropriate exit function
-
 switch (state)
 {
-    case 0: //Control
+    case 0: //control
         StateControlUpdate();
         break;
     case 1: //punch attack
@@ -11,19 +9,23 @@ switch (state)
     case 2: //Sword attack
         StateSwordUpdate();
         break;
-    case 3: // Time stop
+    default:
+        show_debug_message("State update not implemented for state " + string(state));
+        break;
+}
+
+switch (stateR)
+{
+    case 0: //control
+        StateControlUpdate();
+        break;
+    case 1: // Time stop
         StateTimeStopUpdate();
         break;
-    case 4: //invulnerability
+    case 2: //invulnerability
         StateInvulnerabilityUpdate();
         break;
-    case 5: //being hit
-        StateHitUpdate();
-        break;
-    case 6: //death
-        StateDeathUpdate();
-        break;
     default:
-        show_debug_message("State enter not implemented for state " + string(state));
+        show_debug_message("State update not implemented for state " + string(state));
         break;
 }
