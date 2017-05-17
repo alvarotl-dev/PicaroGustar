@@ -2,7 +2,8 @@
 
 sprite_index=sprPlayerPunch;
 image_index=0;
-if (CheckCollision(10)==1)
-    move_towards_point(mouse_x,mouse_y,5);
-else if(CheckCollision(10)==0)
-    move_towards_point(mouse_x,mouse_y,-5);
+if (CheckCollision(13)==1)
+    move_towards_point(mouse_x,mouse_y,6);
+else speed=0;
+/*else if(CheckCollision(10)==0)
+    move_towards_point(mouse_x,mouse_y,-5);*/
