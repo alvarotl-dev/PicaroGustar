@@ -131,7 +131,7 @@ buttonTime=false;
 targetVelX=0;
 targetVelY=0;
 //Player can only do things if he's alive
-if (global.alive==true &amp;&amp; ableToMove==1)
+if (global.alive==true &amp;&amp; ableToMove &amp;&amp; state==0)
 {
     if(keyboard_check(vk_left)||keyboard_check(ord('A')))
     {

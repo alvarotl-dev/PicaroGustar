@@ -21,6 +21,9 @@ else if (image_index==5)
 }
 */
 ableToMove=0;
+if (speed>0)
+    speed-=2;
+    
 if (IsAnimationFinished())
 {
     nextState=0;
