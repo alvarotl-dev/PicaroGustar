@@ -1,1 +1,1 @@
-///nothing to do
+ableToMove=1;

@@ -1,1 +1,1 @@
-
+ableToMove=0;

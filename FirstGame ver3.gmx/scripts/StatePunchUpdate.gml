@@ -20,7 +20,7 @@ else if (image_index==5)
     }
 }
 */
-
+ableToMove=0;
 if (IsAnimationFinished())
 {
     nextState=0;
