@@ -37,6 +37,13 @@
         <sprite>sprites\sprKnifeThrowerWalkLeft</sprite>
         <sprite>sprites\sprKnifeThrowerWalkRight</sprite>
       </sprites>
+      <sprite>sprites\bossDead</sprite>
+      <sprite>sprites\bossDown</sprite>
+      <sprite>sprites\bossIdle</sprite>
+      <sprite>sprites\bossLeft</sprite>
+      <sprite>sprites\bossRight</sprite>
+      <sprite>sprites\bossUp</sprite>
+      <sprite>sprites\sprAt</sprite>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>
@@ -122,6 +129,7 @@
     <objects name="Player">
       <object>objects\objPlayer</object>
       <object>objects\objSwordAttack</object>
+      <object>objects\objPlayerHit</object>
     </objects>
     <objects name="Interface">
       <object>objects\objRightPowerUp</object>
@@ -132,6 +140,9 @@
       <object>objects\objEnemyParent</object>
       <object>objects\objKillingThingParent</object>
       <object>objects\objEnemyArmor</object>
+      <object>objects\boss</object>
+      <object>objects\objKnifeThrower</object>
+      <object>objects\objKnife</object>
     </objects>
   </objects>
   <rooms name="rooms">
