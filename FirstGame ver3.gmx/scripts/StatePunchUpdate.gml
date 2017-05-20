@@ -28,7 +28,7 @@ if (CheckCollision(12)==0)
 }
 
 if (speed>0)
-    speed-=2;
+    speed-=1;
     
 if (speed == 0 || IsAnimationFinished())
 {
