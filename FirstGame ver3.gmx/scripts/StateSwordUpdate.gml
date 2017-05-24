@@ -1,7 +1,4 @@
-//check if we reached the end of the animation 
-
-ableToMove=0;
-if (IsAnimationFinished())
-{
-    nextState=0;
-}
+//Create the instance of sword attack.
+if (instance_number(objSwordAttack)<1)
+instance_create(x,y,objSwordAttack);
+nextState = 0;

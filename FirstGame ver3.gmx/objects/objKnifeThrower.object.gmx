@@ -75,9 +75,13 @@ alarm[0]=100*velMod;
           <argument>
             <kind>1</kind>
             <string>if (hp&gt;0)
-{
-    instance_create(x, y, objKnife);
-    alarm[0]=100*velMod;
+{   
+    if(instance_number(objKnife)&lt;6)
+        {
+        instance_create(x, y, objKnife);
+        alarm[0]=100*velMod;
+        }
+
 }
 </string>
           </argument>

@@ -12,7 +12,7 @@ switch (state)
         StateSwordEnter();
         break;
     default:
-        show_debug_message("State enter not implemented for state " + string(state));
+        show_debug_message("State enter not implemented for state Left " + string(state));
         break;
 }
 
@@ -28,6 +28,6 @@ switch (stateR)
         StateInvulnerabilityEnter();
         break;
     default:
-        show_debug_message("State enter not implemented for state " + string(state));
+        show_debug_message("State enter not implemented for state Right " + string(state));
         break;
 }

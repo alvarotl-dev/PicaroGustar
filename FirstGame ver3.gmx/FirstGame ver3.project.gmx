@@ -52,6 +52,7 @@
     </sprites>
     <sprite>sprites\sprSwordAttack</sprite>
     <sprite>sprites\sprPunchAttack</sprite>
+    <sprite>sprites\sprHit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
@@ -85,8 +86,8 @@
       </scripts>
       <scripts name="Sword attack">
         <script>scripts\StateSwordEnter.gml</script>
-        <script>scripts\StateSwordExit.gml</script>
         <script>scripts\StateSwordUpdate.gml</script>
+        <script>scripts\StateSwordExit.gml</script>
       </scripts>
       <scripts name="State time stop">
         <script>scripts\StateTimeStopEnter.gml</script>
@@ -130,6 +131,8 @@
       <object>objects\objPlayer</object>
       <object>objects\objSwordAttack</object>
       <object>objects\objPlayerHit</object>
+      <object>objects\objPunchAttack</object>
+      <object>objects\objHit</object>
     </objects>
     <objects name="Interface">
       <object>objects\objRightPowerUp</object>
@@ -143,6 +146,7 @@
       <object>objects\boss</object>
       <object>objects\objKnifeThrower</object>
       <object>objects\objKnife</object>
+      <object>objects\objDmgDealer</object>
     </objects>
   </objects>
   <rooms name="rooms">

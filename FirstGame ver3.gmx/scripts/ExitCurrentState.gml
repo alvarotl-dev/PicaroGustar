@@ -10,7 +10,7 @@ switch (state)
         StateSwordExit();
         break;
     default:
-        show_debug_message("State exit not implemented for state " + string(state));
+        show_debug_message("State exit not implemented for state Left " + string(state));
         break;
 }
 
@@ -26,6 +26,6 @@ switch (stateR)
         StateInvulnerabilityExit();
         break;
     default:
-        show_debug_message("State exit not implemented for state " + string(state));
+        show_debug_message("State exit not implemented for state Right" + string(state));
         break;
 }
