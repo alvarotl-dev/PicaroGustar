@@ -43,6 +43,8 @@
 sp=10;
 direction=random_range(0, 360);
 image_angle=direction+90;
+bounceCount=0;
+
 </string>
           </argument>
         </arguments>
@@ -80,11 +82,19 @@ image_angle=direction+90;
           <argument>
             <kind>1</kind>
             <string>///bouncing
-if (place_meeting(x+hspeed,y,objInvWall))hspeed*=-1;
-if (place_meeting(x,y+vspeed,objInvWall))vspeed*=-1;
+if (place_meeting(x+hspeed,y,objInvWall))
+    {
+        hspeed*=-1;
+        bounceCount++;
+    }
+if (place_meeting(x,y+vspeed,objInvWall))
+    {
+        vspeed*=-1;
+        bounceCount++;
+    }
     image_angle=direction+90;
 
-if(objKnifeThrower.hp&lt;=0)
+if(!instance_exists(objKnifeThrower))
     instance_destroy();
     
 speed=sp*velMod;

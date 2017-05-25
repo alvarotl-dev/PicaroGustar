@@ -151,9 +151,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roomCuchillos</room>
     <room>rooms\pantallaInicio</room>
     <room>rooms\room2</room>
+    <room>rooms\roomCuchillos</room>
     <room>rooms\room1</room>
     <room>rooms\duplicateThisRoom</room>
     <room>rooms\roomBoss1</room>

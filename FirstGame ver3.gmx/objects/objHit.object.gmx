@@ -8,6 +8,31 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Enemy = instance_place(x,y,objEnemyParent);
+Enemy.hp -= objDmgDealer.DMG;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,18 +50,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (IsAnimationFinished())
-{  
-    if (place_meeting(x,y,objEnemyParent))
+            <string>if (instance_exists(Enemy))
+{
+    x = Enemy.x
+    y = Enemy.y
+    
+
+    if (IsAnimationFinished())
     {
-        touchEnemy = instance_place(x,y,objEnemyParent);
-        touchEnemy.beingHit = 1;
-        touchEnemy.hp -= objDmgDealer.DMG;
-        show_debug_message("It has " + string(touchEnemy.hp) + "hp");
+        //if (place_meeting(x,y,objEnemyParent))
+        //{
+        Enemy.beingHit = 1;
+        show_debug_message("It has " + string(Enemy.hp) + "hp");
         instance_destroy();
+        //}
     }
+    
 }
+
+
+else
+    instance_destroy();
 </string>
           </argument>
         </arguments>
