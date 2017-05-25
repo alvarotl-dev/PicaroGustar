@@ -41,6 +41,8 @@
             <kind>1</kind>
             <string>randomize();
 
+atSp = irandom_range (80, 120);
+
 switch (irandom_range(0,1))
 {
     case 0:
@@ -51,7 +53,8 @@ switch (irandom_range(0,1))
         vsp=3;
         hsp=5;
 }
-alarm[0]=100*velMod;
+
+alarm[0]=atSp*velMod;
 </string>
           </argument>
         </arguments>
@@ -74,14 +77,29 @@ alarm[0]=100*velMod;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hp&gt;0)
+            <string>atSp = irandom_range (190, 250);
+
+if (hp&gt;0)
 {   
     if(instance_number(objKnife)&lt;6)
         {
         instance_create(x, y, objKnife);
-        alarm[0]=100*velMod;
+        alarm[0]=atSp*velMod;
         }
 
+}
+
+
+
+switch (irandom_range(0,1))
+{
+    case 0:
+        vsp=5;
+        hsp=3;
+        break;
+    case 1:
+        vsp=3;
+        hsp=5;
 }
 </string>
           </argument>
