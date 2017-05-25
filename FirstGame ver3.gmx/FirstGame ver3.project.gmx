@@ -151,6 +151,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\roomCuchillos</room>
     <room>rooms\pantallaInicio</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
