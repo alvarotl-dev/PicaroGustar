@@ -38,6 +38,7 @@ timeToAllowHits=0;
 ableToMove=1;
 stateR=0;
 nextStateR=0;
+baseAt = 1;
 
 global.newRoom=1;
 buttonTime=false;

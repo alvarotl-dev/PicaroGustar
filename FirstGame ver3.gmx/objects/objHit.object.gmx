@@ -25,10 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (IsAnimationFinished())
-{
-    objEnemyParent.beingHit = 1;
-    instance_destroy();
+            <string>
+if (IsAnimationFinished())
+{  
+    if (place_meeting(x,y,objEnemyParent))
+    {
+        touchEnemy = instance_place(x,y,objEnemyParent);
+        touchEnemy.beingHit = 1;
+        touchEnemy.hp -= objDmgDealer.DMG;
+        show_debug_message("It has " + string(touchEnemy.hp) + "hp");
+        instance_destroy();
+    }
 }
 </string>
           </argument>

@@ -44,6 +44,7 @@
       <sprite>sprites\bossRight</sprite>
       <sprite>sprites\bossUp</sprite>
       <sprite>sprites\sprAt</sprite>
+      <sprite>sprites\sprEnemyParent</sprite>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>
