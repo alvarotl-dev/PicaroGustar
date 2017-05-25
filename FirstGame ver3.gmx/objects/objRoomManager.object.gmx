@@ -25,8 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///creates instances of player's power ups and rerolls 
+            <string>///creates instances of player, power ups and rerolls 
 instance_create(256,32,objReroll);
+
+//Create the player
+if (instance_exists(LevelGen))
+{
+    while (!instance_exists(objPlayer))
+    {
+        playerX = irandom_range(64,736);
+        playerY = irandom_range(96,416);
+        if (LevelGen.grid[# playerX, playerY] == FLOOR)
+            instance_create(playerX,playerY,objPlayer);
+    } 
+}
+
 with (objReroll) 
 {
     image_xscale=0.4;
