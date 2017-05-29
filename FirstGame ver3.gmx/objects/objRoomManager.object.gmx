@@ -29,7 +29,7 @@
 instance_create(256,32,objReroll);
 
 //Create the player
-if (instance_exists(LevelGen))
+/*if (instance_exists(LevelGen))
 {
     while (!instance_exists(objPlayer))
     {
@@ -38,7 +38,9 @@ if (instance_exists(LevelGen))
         if (LevelGen.grid[# playerX, playerY] == FLOOR)
             instance_create(playerX,playerY,objPlayer);
     } 
-}
+}*/
+
+instance_create(room_width/2,room_height/2,objPlayer);
 
 with (objReroll) 
 {

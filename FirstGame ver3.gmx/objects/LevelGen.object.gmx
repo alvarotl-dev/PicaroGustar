@@ -31,12 +31,15 @@ room_width = (CELL_WIDTH /16)*384;
 room_height = (CELL_HEIGHT/16)*240;
 
 //Set the grid width and height
-var width = 736 div CELL_WIDTH; 
+/*var width = 736 div CELL_WIDTH; 
 var height = 416 div CELL_HEIGHT;
 var stWidth = 64 div CELL_HEIGHT;
-var stHeight = 96 div CELL_HEIGHT;
-/*var width = room_width div CELL_WIDTH;
-var height = room_width div CELL_HEIGHT;*/
+var stHeight = 96 div CELL_HEIGHT;*/
+
+var width = room_width div CELL_WIDTH;
+var height = room_width div CELL_HEIGHT;
+var stWidth = 0;
+var stHeight = 0;
 
 //Create the grid
 grid = ds_grid_create(width-stWidth, height-stHeight);
