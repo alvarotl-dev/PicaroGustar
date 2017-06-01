@@ -15,12 +15,15 @@
       <sprite>sprites\sprSword</sprite>
       <sprite>sprites\sprTimeStop</sprite>
       <sprite>sprites\sprInvulnerable</sprite>
+      <sprite>sprites\sprLives</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
+      <sprite>sprites\sprPlayerHit</sprite>
       <sprite>sprites\sprPlayerPunch</sprite>
       <sprite>sprites\sprPlayerSword</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
+      <sprite>sprites\sprPlayerWalkHit</sprite>
       <sprite>sprites\sprPlayerTimeStop</sprite>
     </sprites>
     <sprites name="Enemies">
@@ -58,6 +61,7 @@
     <sprite>sprites\sprSwordAttack</sprite>
     <sprite>sprites\sprPunchAttack</sprite>
     <sprite>sprites\sprHit</sprite>
+    <sprite>sprites\sprPlayerHitmarker</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
@@ -138,9 +142,9 @@
     <objects name="Player">
       <object>objects\objPlayer</object>
       <object>objects\objSwordAttack</object>
-      <object>objects\objPlayerHit</object>
       <object>objects\objPunchAttack</object>
       <object>objects\objHit</object>
+      <object>objects\objPlayerHit</object>
     </objects>
     <objects name="Interface">
       <object>objects\objRightPowerUp</object>
@@ -161,10 +165,9 @@
   <rooms name="rooms">
     <room>rooms\pantallaInicio</room>
     <room>rooms\room_pursuer_test</room>
-    <room>rooms\testingRoomLVGen</room>
     <room>rooms\roomCuchillos</room>
+    <room>rooms\testingRoomLVGen</room>
     <room>rooms\room2</room>
-    <room>rooms\roomCuchillos2</room>
     <room>rooms\room1</room>
     <room>rooms\duplicateThisRoom</room>
     <room>rooms\roomBoss1</room>

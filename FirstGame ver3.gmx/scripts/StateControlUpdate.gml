@@ -40,8 +40,6 @@ if mouse_check_button_released(mb_right)
 if(place_meeting(x,y,objKillingThingParent))
     nextState=5;
     
-if(hpPlayer<=0)
-    nextState=6;
 /*
 //Handle inputs to calculate the target speed
 targetVelX=0;
