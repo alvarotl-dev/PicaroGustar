@@ -44,6 +44,9 @@
         <sprite>sprites\sprPursuer</sprite>
         <sprite>sprites\sprPursuerDeath</sprite>
       </sprites>
+      <sprites name="Ghost">
+        <sprite>sprites\sprGhost</sprite>
+      </sprites>
       <sprite>sprites\bossDead</sprite>
       <sprite>sprites\bossDown</sprite>
       <sprite>sprites\bossIdle</sprite>
@@ -62,6 +65,11 @@
     <sprite>sprites\sprPunchAttack</sprite>
     <sprite>sprites\sprHit</sprite>
     <sprite>sprites\sprPlayerHitmarker</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\sprMenu</sprite>
+      <sprite>sprites\sprMenuSelector</sprite>
+      <sprite>sprites\sprite39</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
@@ -69,6 +77,7 @@
     <background>background\bgFloor</background>
     <background>background\defaultRoomBackground</background>
     <background>background\tileJavi</background>
+    <background>background\fonditomenutito</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -132,7 +141,6 @@
   </fonts>
   <objects name="objects">
     <objects name="Room">
-      <object>objects\objInitialManager</object>
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
       <object>objects\objRoomChange</object>
@@ -160,6 +168,10 @@
       <object>objects\objKnife</object>
       <object>objects\objDmgDealer</object>
       <object>objects\objEnemyPursuer</object>
+      <object>objects\objGhost</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\objMenu</object>
     </objects>
   </objects>
   <rooms name="rooms">
