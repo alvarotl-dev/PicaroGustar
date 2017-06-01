@@ -37,6 +37,10 @@
         <sprite>sprites\sprKnifeThrowerWalkLeft</sprite>
         <sprite>sprites\sprKnifeThrowerWalkRight</sprite>
       </sprites>
+      <sprites name="Pursuer">
+        <sprite>sprites\sprPursuer</sprite>
+        <sprite>sprites\sprPursuerDeath</sprite>
+      </sprites>
       <sprite>sprites\bossDead</sprite>
       <sprite>sprites\bossDown</sprite>
       <sprite>sprites\bossIdle</sprite>
