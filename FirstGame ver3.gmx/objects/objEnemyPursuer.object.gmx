@@ -91,6 +91,10 @@ if (hp&gt;0)
     }
     
     else speed=0;
+    
+    //time stop needs the animation of the sprite to stop
+    if (velMod==1) liveAnimation=image_index;
+    else image_index=liveAnimation;
 }
 else 
 {

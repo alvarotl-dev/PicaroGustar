@@ -57,6 +57,7 @@ global.newRoom=0;
             <kind>1</kind>
             <string>if (keyboard_check(vk_space))
     room_goto_next();
+
 </string>
           </argument>
         </arguments>

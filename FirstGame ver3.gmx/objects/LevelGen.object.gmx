@@ -61,7 +61,7 @@ var controllerDir = irandom(3);
 var odds = 1;
 
 //Create the level using 1000 steps;
-repeat (1000) 
+repeat (1000)
 {
     //Place a floor tile the controller position
     grid [# controllerX, controllerY] = FLOOR;

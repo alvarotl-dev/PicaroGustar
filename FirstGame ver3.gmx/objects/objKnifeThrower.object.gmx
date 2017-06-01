@@ -77,7 +77,8 @@ alarm[0]=atSp*velMod;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>atSp = irandom_range (190, 250);
+            <string>///Attack
+atSp = irandom_range (190, 250);
 
 if (hp&gt;0)
 {   
