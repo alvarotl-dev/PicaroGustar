@@ -49,17 +49,88 @@ path = path_add();
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///collisions
+//collisions in the vertical axis
+if(place_meeting(x, y+vspeed, objInvWall)){
+    while(!place_meeting(x, y+sign(vspeed), objInvWall)){
+        y+=sign(vspeed);
+    }
+    vspeed=0;
+}
+
+//collisions in the horizontal axis
+if(place_meeting(x+hspeed, y, objInvWall)){
+    while(!place_meeting(x+sign(hspeed), y, objInvWall)){
+        x+=sign(hspeed);
+    }
+    hspeed=0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Check hit with player's weapons
+if (place_meeting(x,y,objDmgDealer)&amp;&amp; beingHit = 1)
+{
+    instance_create(x,y,objHit);
+    beingHit = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///attacking
+atFreq = atSpeed * velMod;
+
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -100,42 +171,6 @@ else
 {
     sprite_index=sprPursuerDeath;
     if (IsAnimationFinished()) instance_destroy();
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///collisions
-//collisions in the vertical axis
-if(place_meeting(x, y+vspeed, objInvWall)){
-    while(!place_meeting(x, y+sign(vspeed), objInvWall)){
-        y+=sign(vspeed);
-    }
-    vspeed=0;
-}
-
-//collisions in the horizontal axis
-if(place_meeting(x+hspeed, y, objInvWall)){
-    while(!place_meeting(x+sign(hspeed), y, objInvWall)){
-        x+=sign(hspeed);
-    }
-    hspeed=0;
 }
 </string>
           </argument>
