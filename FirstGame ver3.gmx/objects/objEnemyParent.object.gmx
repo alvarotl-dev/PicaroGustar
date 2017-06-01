@@ -27,12 +27,12 @@
             <kind>1</kind>
             <string>///initial variables
 sp = 10;
-atSpeed = 10;
+atSpeed = 10; //Turns 0 when time is stopped
 atBase = 10;
 atDamageMod = 5;
 hpMod = 5;
 hpBase = 10;
-velMod = 1; 
+velMod = 1; //Turns 0 when time is stopped
 beingHit = 1;
 
 atDamage = atBase + atDamageMod * global.difficulty;
@@ -59,9 +59,9 @@ hp = hpBase + hpMod * global.difficulty;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Movement and attacking
-//speed = vel * velMod;
+            <string>///attacking
 atFreq = atSpeed * velMod;
+
 </string>
           </argument>
         </arguments>
@@ -108,7 +108,8 @@ if (place_meeting(x,y,objDmgDealer)&amp;&amp; beingHit = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hp &lt;= 0)
+            <string>///Death
+if (hp &lt;= 0)
 {
     instance_destroy();
 }
