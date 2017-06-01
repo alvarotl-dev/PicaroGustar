@@ -112,8 +112,8 @@ if (keyboard_check_released(vk_down))
             <string>// always draw ourselves
 draw_self();
 // calculate the position for the arrow
-arrowX = x +140;
-arrowY = y + 105 + currOption * 16;
+arrowX = x +240;
+arrowY = y + 190 + currOption * 26.5;
 draw_sprite(sprMenuSelector, 0, arrowX, arrowY);
 </string>
           </argument>

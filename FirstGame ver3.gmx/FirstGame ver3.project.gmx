@@ -64,6 +64,7 @@
     <sprites name="Menu">
       <sprite>sprites\sprMenu</sprite>
       <sprite>sprites\sprMenuSelector</sprite>
+      <sprite>sprites\sprite39</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -72,6 +73,7 @@
     <background>background\bgFloor</background>
     <background>background\defaultRoomBackground</background>
     <background>background\tileJavi</background>
+    <background>background\fonditomenutito</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
