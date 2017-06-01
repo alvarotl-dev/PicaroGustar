@@ -73,6 +73,7 @@
     <instance objName="objInvWall" x="192" y="288" name="inst_FAA16650" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="544" y="320" name="inst_95A7B3EE" locked="0" code="" scaleX="-10" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemyPursuer" x="64" y="96" name="inst_52568174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGhost" x="160" y="32" name="inst_F9E1813B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileSet" x="0" y="0" w="32" h="32" xo="32" yo="288" id="10001021" name="inst_ACB9E3B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
