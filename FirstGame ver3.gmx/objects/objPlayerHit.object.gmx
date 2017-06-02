@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>Player = instance_place(x,y,objPlayer);
-
+timeToAllowHits = 60;
 Player.hpPlayer -= 1;
 
 </string>
@@ -53,19 +53,18 @@ Player.hpPlayer -= 1;
             <kind>1</kind>
             <string>if (instance_exists(Player))
 {
-    Player.sprite_index = sprPlayerHit;
-    x = Player.x
-    y = Player.y
+    objPlayer.sprite_index = sprPlayerHit;
+    --timeToAllowHits;
+    
+    x = Player.x;
+    y = Player.y;
     
 
-    if (IsAnimationFinished())
+    if (timeToAllowHits&lt;0)
     {
-        //if (place_meeting(x,y,objEnemyParent))
-        //{
         show_debug_message("The player has " + string(Player.hpPlayer) + "hp");
         instance_destroy();
         Player.beingHit = 1;
-        //}
     }
     
 }

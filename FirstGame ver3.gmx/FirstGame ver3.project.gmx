@@ -121,12 +121,6 @@
         <script>scripts\StateInvulnerabilityExit.gml</script>
         <script>scripts\StateInvulnerabilityUpdate.gml</script>
       </scripts>
-      <scripts name="State being hit">
-        <script>scripts\StateHitEnter.gml</script>
-        <script>scripts\StateHitExit.gml</script>
-        <script>scripts\StateHitUpdate.gml</script>
-        <script>scripts\HitPlayer.gml</script>
-      </scripts>
       <scripts name="State death">
         <script>scripts\StateDeathEnter.gml</script>
         <script>scripts\StateDeathExit.gml</script>

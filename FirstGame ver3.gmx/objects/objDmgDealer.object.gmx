@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>baseDMG = 5;
-modDmg = 0;
+modDmg = 1;
 
 DMG = baseDMG + modDmg * objPlayer.baseAt
 </string>

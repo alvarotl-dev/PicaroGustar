@@ -17,10 +17,7 @@ switch (state)
     case 4: //invulnerability
         StateInvulnerabilityUpdate();
         break;
-    case 5: //being hit
-        StateHitUpdate();
-        break;
-    case 6: //death
+    case 5: //death
         StateDeathUpdate();
         break;
     default:
