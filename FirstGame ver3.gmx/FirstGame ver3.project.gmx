@@ -44,10 +44,6 @@
       <sprites name="Ghost">
         <sprite>sprites\sprGhost</sprite>
       </sprites>
-      <sprites name="Rats">
-        <sprite>sprites\sprRatHole</sprite>
-        <sprite>sprites\sprRat1</sprite>
-      </sprites>
       <sprite>sprites\bossDead</sprite>
       <sprite>sprites\bossDown</sprite>
       <sprite>sprites\bossIdle</sprite>
@@ -163,14 +159,12 @@
       <object>objects\objKnife</object>
       <object>objects\objDmgDealer</object>
       <object>objects\objEnemyPursuer</object>
-      <object>objects\objRat</object>
       <object>objects\objGhost</object>
-      <object>objects\objRatHole</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_pursuer_test</room>
     <room>rooms\pantallaInicio</room>
+    <room>rooms\room_pursuer_test</room>
     <room>rooms\testingRoomLVGen</room>
     <room>rooms\roomCuchillos</room>
     <room>rooms\room2</room>
