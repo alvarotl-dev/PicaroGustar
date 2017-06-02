@@ -420,7 +420,7 @@ if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyPare
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///number of rerolls available
+            <string>///Rerolls and Live available.
 
 //First of all, we draw ourselves
 draw_self(); 
@@ -481,29 +481,6 @@ if(buttonTime)
     {
         shader_reset();
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Number of lives
-
-draw_sprite(sprPlayer,1,100,200)
 </string>
           </argument>
         </arguments>

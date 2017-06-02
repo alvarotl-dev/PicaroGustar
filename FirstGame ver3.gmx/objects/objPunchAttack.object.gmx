@@ -39,7 +39,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>modDmg=5;
+objPlayer.beingHit = 0;
 direction = point_direction(x,y,mouse_x,mouse_y);
 image_angle = direction - 90;
 </string>
@@ -83,6 +84,7 @@ y = objPlayer.y
 
 if (IsAnimationFinished())
 {
+    objPlayer.beingHit = 1;
     instance_destroy()
 }
 </string>
