@@ -52,6 +52,10 @@
       <sprite>sprites\bossUp</sprite>
       <sprite>sprites\sprAt</sprite>
       <sprite>sprites\sprEnemyParent</sprite>
+      <sprites name="IceMage">
+        <sprite>sprites\sprSnowBall</sprite>
+        <sprite>sprites\sprMage</sprite>
+      </sprites>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>
@@ -64,7 +68,6 @@
     <sprites name="Menu">
       <sprite>sprites\sprMenu</sprite>
       <sprite>sprites\sprMenuSelector</sprite>
-      <sprite>sprites\sprite39</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -165,6 +168,8 @@
       <object>objects\objDmgDealer</object>
       <object>objects\objEnemyPursuer</object>
       <object>objects\objGhost</object>
+      <object>objects\objSnowBall</object>
+      <object>objects\objIceMage</object>
     </objects>
     <objects name="Menu">
       <object>objects\objMenu</object>
