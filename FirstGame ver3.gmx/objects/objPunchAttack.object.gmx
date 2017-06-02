@@ -81,7 +81,7 @@ image_angle = direction - 90;
             <kind>1</kind>
             <string>x = objPlayer.x
 y = objPlayer.y
-
+objPlayer.beingHit = 0;
 if (IsAnimationFinished())
 {
     objPlayer.beingHit = 1;

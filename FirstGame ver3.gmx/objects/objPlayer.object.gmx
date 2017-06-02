@@ -415,19 +415,24 @@ if (timeToAllowHits&gt;0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Damage the player
+            <string>///Slow player
 
-if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyParent) )&amp;&amp; beingHit = 1)
+if(place_meeting(x,y,objSnowBall))
 {
-    instance_create(x,y,objPlayerHit);
-    beingHit = 0;
+    SlowBall=1;
+       
+   if (SlowBall=1)
+   {
+        maxSpeed=3;
+   }
+   
+   alarm[2]=60;
+   SlowBall=0;   
 }
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="objSnowBall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -444,19 +449,12 @@ if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyPare
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Slow player
+            <string>///Damage the player
 
-if(place_meeting(x,y,objSnowBall))
+if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyParent) )&amp;&amp; beingHit = 1)
 {
-    SlowBall=1;
-       
-   if (SlowBall=1)
-   {
-        maxSpeed=3;
-   }
-   
-   alarm[2]=60;
-   SlowBall=0;   
+    instance_create(x,y,objPlayerHit);
+    beingHit = 0;
 }
 </string>
           </argument>

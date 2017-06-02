@@ -32,5 +32,13 @@
     <frame index="9">images\sprPlayerHit_9.png</frame>
     <frame index="10">images\sprPlayerHit_10.png</frame>
     <frame index="11">images\sprPlayerHit_11.png</frame>
+    <frame index="12">images\sprPlayerHit_12.png</frame>
+    <frame index="13">images\sprPlayerHit_13.png</frame>
+    <frame index="14">images\sprPlayerHit_14.png</frame>
+    <frame index="15">images\sprPlayerHit_15.png</frame>
+    <frame index="16">images\sprPlayerHit_16.png</frame>
+    <frame index="17">images\sprPlayerHit_17.png</frame>
+    <frame index="18">images\sprPlayerHit_18.png</frame>
+    <frame index="19">images\sprPlayerHit_19.png</frame>
   </frames>
 </sprite>

@@ -20,7 +20,6 @@
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
       <sprite>sprites\sprPlayerHit</sprite>
-      <sprite>sprites\sprPlayerHitt</sprite>
       <sprite>sprites\sprPlayerPunch</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
       <sprite>sprites\sprPlayerWalkHit</sprite>
