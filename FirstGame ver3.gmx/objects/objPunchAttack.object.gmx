@@ -79,7 +79,9 @@ image_angle = direction - 90;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = objPlayer.x
+            <string>///Make the player invulnerable to hits while using the punch.
+
+x = objPlayer.x
 y = objPlayer.y
 objPlayer.beingHit = 0;
 if (IsAnimationFinished())

@@ -39,8 +39,11 @@ ableToMove=1;
 stateR=0;
 nextStateR=0;
 baseAt = 1;
-beingHit = 1;
-SlowBall = 0;
+beingHit = 1;  //Is the player allowed to get hits?
+SlowBall = 0;  //Slows the player
+
+LeftCD = 0;
+RightCD = 0;
 
 global.newRoom=1;
 buttonTime=false;

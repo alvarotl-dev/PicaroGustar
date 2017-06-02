@@ -53,7 +53,7 @@ Player.hpPlayer -= 1;
             <kind>1</kind>
             <string>if (instance_exists(Player))
 {
-    objPlayer.sprite_index = sprPlayerHit;
+    objPlayer.image_blend = c_red;
     --timeToAllowHits;
     
     x = Player.x;
@@ -62,6 +62,7 @@ Player.hpPlayer -= 1;
 
     if (timeToAllowHits&lt;0)
     {
+        objPlayer.image_blend = c_white;
         show_debug_message("The player has " + string(Player.hpPlayer) + "hp");
         instance_destroy();
         Player.beingHit = 1;
