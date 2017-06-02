@@ -34,13 +34,14 @@ accel=1;
 state=0;
 justEntered=1;
 nextState=0;
-timeToAllowHits=0;
 ableToMove=1;
 stateR=0;
 nextStateR=0;
 baseAt = 1;
 beingHit = 1;  //Is the player allowed to get hits?
+realBeingHit = 1; //If it is, is it being hitted?
 SlowBall = 0;  //Slows the player
+
 
 LeftCD = 0;
 RightCD = 0;
@@ -392,32 +393,6 @@ StateMachine();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Update the variable controlling wether we can be hit
-
-if (timeToAllowHits&gt;0)
-{
-    --timeToAllowHits;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Slow player
 
 if(place_meeting(x,y,objSnowBall))
@@ -454,10 +429,14 @@ if(place_meeting(x,y,objSnowBall))
             <kind>1</kind>
             <string>///Hit player when collides with something that can damage him
 
-if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyParent) ) &amp;&amp; beingHit == 1)
+
+if (beingHit == 1)
 {
-    instance_create(x,y,objPlayerHit);
-    beingHit = 0;
+    if ( place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyParent) )
+    {
+        instance_create(x,y,objPlayerHit);
+        beingHit = 0;
+    }
 }
 </string>
           </argument>

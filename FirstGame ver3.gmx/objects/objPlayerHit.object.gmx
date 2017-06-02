@@ -26,9 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>Player = instance_place(x,y,objPlayer);
-timeToAllowHits = 60;
-Player.hpPlayer -= 1;
-
+if (Player.invOn == 0)
+{
+    timeToAllowHits = 60;
+    Player.hpPlayer -= 1;
+}
 </string>
           </argument>
         </arguments>
@@ -51,7 +53,7 @@ Player.hpPlayer -= 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(Player))
+            <string>if (instance_exists(Player)&amp;&amp; Player.invOn==0)
 {
     objPlayer.image_blend = c_red;
     --timeToAllowHits;
