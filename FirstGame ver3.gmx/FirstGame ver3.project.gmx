@@ -15,15 +15,22 @@
       <sprite>sprites\sprSword</sprite>
       <sprite>sprites\sprTimeStop</sprite>
       <sprite>sprites\sprInvulnerable</sprite>
+      <sprite>sprites\sprLives</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
+      <sprite>sprites\sprPlayerHit</sprite>
       <sprite>sprites\sprPlayerPunch</sprite>
-      <sprite>sprites\sprPlayerSword</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
+      <sprite>sprites\sprPlayerWalkHit</sprite>
       <sprite>sprites\sprPlayerTimeStop</sprite>
+      <sprites name="Attacks">
+        <sprite>sprites\sprPunchAttack</sprite>
+        <sprite>sprites\sprSwordAttack</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
+      <sprite>sprites\sprEnemyParent</sprite>
       <sprites name="Armor">
         <sprite>sprites\sprArmorStando</sprite>
         <sprite>sprites\sprArmorWalkDown</sprite>
@@ -36,6 +43,7 @@
         <sprite>sprites\sprKnifeThrowerWalkUp</sprite>
         <sprite>sprites\sprKnifeThrowerWalkLeft</sprite>
         <sprite>sprites\sprKnifeThrowerWalkRight</sprite>
+        <sprite>sprites\sprAt</sprite>
       </sprites>
       <sprites name="Pursuer">
         <sprite>sprites\sprPursuer</sprite>
@@ -44,23 +52,34 @@
       <sprites name="Ghost">
         <sprite>sprites\sprGhost</sprite>
       </sprites>
-      <sprite>sprites\bossDead</sprite>
-      <sprite>sprites\bossDown</sprite>
-      <sprite>sprites\bossIdle</sprite>
-      <sprite>sprites\bossLeft</sprite>
-      <sprite>sprites\bossRight</sprite>
-      <sprite>sprites\bossUp</sprite>
-      <sprite>sprites\sprAt</sprite>
-      <sprite>sprites\sprEnemyParent</sprite>
+      <sprites name="Boss">
+        <sprite>sprites\bossDown</sprite>
+        <sprite>sprites\bossDead</sprite>
+        <sprite>sprites\bossLeft</sprite>
+        <sprite>sprites\bossUp</sprite>
+        <sprite>sprites\bossRight</sprite>
+        <sprite>sprites\bossIdle</sprite>
+      </sprites>
+      <sprites name="RatHole">
+        <sprite>sprites\sprRat1</sprite>
+        <sprite>sprites\sprRatHole</sprite>
+      </sprites>
+      <sprites name="IceMage">
+        <sprite>sprites\sprSnowBall</sprite>
+        <sprite>sprites\sprMage</sprite>
+      </sprites>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>
       <sprite>sprites\sprRoomChange</sprite>
       <sprite>sprites\sprRoomStart</sprite>
     </sprites>
-    <sprite>sprites\sprSwordAttack</sprite>
-    <sprite>sprites\sprPunchAttack</sprite>
     <sprite>sprites\sprHit</sprite>
+    <sprite>sprites\sprPlayerHitmarker</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\sprMenu</sprite>
+      <sprite>sprites\sprMenuSelector</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
@@ -68,6 +87,7 @@
     <background>background\bgFloor</background>
     <background>background\defaultRoomBackground</background>
     <background>background\tileJavi</background>
+    <background>background\fonditomenutito</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -109,12 +129,6 @@
         <script>scripts\StateInvulnerabilityExit.gml</script>
         <script>scripts\StateInvulnerabilityUpdate.gml</script>
       </scripts>
-      <scripts name="State being hit">
-        <script>scripts\StateHitEnter.gml</script>
-        <script>scripts\StateHitExit.gml</script>
-        <script>scripts\StateHitUpdate.gml</script>
-        <script>scripts\HitPlayer.gml</script>
-      </scripts>
       <scripts name="State death">
         <script>scripts\StateDeathEnter.gml</script>
         <script>scripts\StateDeathExit.gml</script>
@@ -130,20 +144,20 @@
     <font>fonts\fontReroll</font>
   </fonts>
   <objects name="objects">
-    <objects name="Room">
-      <object>objects\objInitialManager</object>
+    <objects name="Managers">
+      <object>objects\objHit</object>
+      <object>objects\objPlayerHit</object>
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
       <object>objects\objRoomChange</object>
-      <object>objects\objRoomStart</object>
       <object>objects\LevelGen</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
-      <object>objects\objSwordAttack</object>
-      <object>objects\objPlayerHit</object>
-      <object>objects\objPunchAttack</object>
-      <object>objects\objHit</object>
+      <objects name="Attacks">
+        <object>objects\objPunchAttack</object>
+        <object>objects\objSwordAttack</object>
+      </objects>
     </objects>
     <objects name="Interface">
       <object>objects\objRightPowerUp</object>
@@ -151,24 +165,33 @@
       <object>objects\objReroll</object>
     </objects>
     <objects name="Enemies">
-      <object>objects\objEnemyParent</object>
-      <object>objects\objKillingThingParent</object>
       <object>objects\objEnemyArmor</object>
       <object>objects\boss</object>
       <object>objects\objKnifeThrower</object>
-      <object>objects\objKnife</object>
-      <object>objects\objDmgDealer</object>
       <object>objects\objEnemyPursuer</object>
       <object>objects\objGhost</object>
+      <object>objects\objIceMage</object>
+      <object>objects\objRat</object>
+      <objects name="Projectiles">
+        <object>objects\objSnowBall</object>
+        <object>objects\objKnife</object>
+      </objects>
+    </objects>
+    <objects name="Menu">
+      <object>objects\objMenu</object>
+    </objects>
+    <objects name="Parents">
+      <object>objects\objKillingThingParent</object>
+      <object>objects\objEnemyParent</object>
+      <object>objects\objDmgDealer</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\pantallaInicio</room>
     <room>rooms\room_pursuer_test</room>
-    <room>rooms\testingRoomLVGen</room>
     <room>rooms\roomCuchillos</room>
+    <room>rooms\testingRoomLVGen</room>
     <room>rooms\room2</room>
-    <room>rooms\roomCuchillos2</room>
     <room>rooms\room1</room>
     <room>rooms\duplicateThisRoom</room>
     <room>rooms\roomBoss1</room>
