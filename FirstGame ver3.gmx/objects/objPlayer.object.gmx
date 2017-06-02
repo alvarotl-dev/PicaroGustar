@@ -426,8 +426,6 @@ if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyPare
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="objSnowBall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -444,7 +442,7 @@ if ( (place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyPare
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Slow player
+            <string>///Slow player
 
 if(place_meeting(x,y,objSnowBall))
 {
