@@ -170,7 +170,6 @@
   </fonts>
   <objects name="objects">
     <objects name="Managers">
-      <object>objects\objHit</object>
       <object>objects\objPlayerHit</object>
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
@@ -192,6 +191,8 @@
       <object>objects\objRightPowerUp</object>
       <object>objects\objLeftPowerUp</object>
       <object>objects\objReroll</object>
+      <object>objects\objTransitionOut</object>
+      <object>objects\objTransitionIn</object>
     </objects>
     <objects name="Enemies">
       <object>objects\objEnemyArmor</object>
@@ -216,9 +217,8 @@
       <object>objects\objKillingThingParent</object>
       <object>objects\objEnemyParent</object>
       <object>objects\objDmgDealer</object>
+      <object>objects\objHit</object>
     </objects>
-    <object>objects\objTransitionOut</object>
-    <object>objects\objTransitionIn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitial</room>
