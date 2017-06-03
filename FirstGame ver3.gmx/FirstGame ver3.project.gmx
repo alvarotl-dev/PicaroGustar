@@ -101,6 +101,10 @@
     <background>background\defaultRoomBackground</background>
     <background>background\tileJavi</background>
     <background>background\fonditomenutito</background>
+    <background>background\Atlas_1</background>
+    <background>background\Atlas_2</background>
+    <background>background\Atlas_3</background>
+    <background>background\Atlas_4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -211,15 +215,16 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\pantallaInicio</room>
-    <room>rooms\room5</room>
     <room>rooms\TesteoJavi</room>
     <room>rooms\room_pursuer_test</room>
     <room>rooms\roomCuchillos</room>
     <room>rooms\testingRoomLVGen</room>
-    <room>rooms\room2</room>
     <room>rooms\room1</room>
-    <room>rooms\duplicateThisRoom</room>
+    <room>rooms\room2</room>
+    <room>rooms\room5</room>
     <room>rooms\roomBoss1</room>
+    <room>rooms\duplicateThisRoom</room>
+    <room>rooms\room11</room>
   </rooms>
   <constants number="5">
     <constant name="CELL_WIDTH">32</constant>
