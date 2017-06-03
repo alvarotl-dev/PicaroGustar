@@ -224,7 +224,9 @@
     <room>rooms\room5</room>
     <room>rooms\roomBoss1</room>
     <room>rooms\duplicateThisRoom</room>
-    <room>rooms\room11</room>
+    <room>rooms\room_A</room>
+    <room>rooms\room_B</room>
+    <room>rooms\room_C</room>
   </rooms>
   <constants number="5">
     <constant name="CELL_WIDTH">32</constant>
