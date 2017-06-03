@@ -37,6 +37,12 @@
         <sprite>sprites\sprArmorWalkLeft</sprite>
         <sprite>sprites\sprArmorWalkRight</sprite>
         <sprite>sprites\sprArmorWalkUp</sprite>
+        <sprite>sprites\sprNoArmorStando</sprite>
+        <sprite>sprites\sprNoAmorWalkDown</sprite>
+        <sprite>sprites\sprNoArmorWalkLeft</sprite>
+        <sprite>sprites\sprNoArmorWalkRight</sprite>
+        <sprite>sprites\sprNoArmorWalkUp</sprite>
+        <sprite>sprites\sprExplosionArmor</sprite>
       </sprites>
       <sprites name="KnifeThrower">
         <sprite>sprites\sprKnifeThrowerWalkDown</sprite>
