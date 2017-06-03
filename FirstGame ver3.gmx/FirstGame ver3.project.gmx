@@ -29,6 +29,7 @@
         <sprite>sprites\sprPunchAttack</sprite>
         <sprite>sprites\sprSwordAttack</sprite>
         <sprite>sprites\sprFireballAttack</sprite>
+        <sprite>sprites\sprFireballExplosion</sprite>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -91,8 +92,8 @@
     <sprites name="Menu">
       <sprite>sprites\sprMenu</sprite>
       <sprite>sprites\sprMenuSelector</sprite>
+      <sprite>sprites\sprCredits</sprite>
     </sprites>
-    <sprite>sprites\sprFireballExplosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
@@ -161,6 +162,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
+    <shader type="GLSLES">shaders\shader1.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fontReroll</font>
@@ -174,9 +176,11 @@
       <object>objects\objRoomManager</object>
       <object>objects\objRoomChange</object>
       <object>objects\LevelGen</object>
+      <object>objects\objCreditsManager</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
+      <object>objects\objCreditsPlayer</object>
       <objects name="Attacks">
         <object>objects\objPunchAttack</object>
         <object>objects\objSwordAttack</object>
@@ -212,9 +216,11 @@
       <object>objects\objEnemyParent</object>
       <object>objects\objDmgDealer</object>
     </objects>
+    <object>objects\objTransitionOut</object>
+    <object>objects\objTransitionIn</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\pantallaInicio</room>
+    <room>rooms\roomInitial</room>
     <room>rooms\TesteoJavi</room>
     <room>rooms\room_pursuer_test</room>
     <room>rooms\roomCuchillos</room>
@@ -225,6 +231,7 @@
     <room>rooms\roomBoss1</room>
     <room>rooms\duplicateThisRoom</room>
     <room>rooms\room11</room>
+    <room>rooms\roomCredits</room>
   </rooms>
   <constants number="5">
     <constant name="CELL_WIDTH">32</constant>
