@@ -442,6 +442,45 @@ if (beingHit == 1)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Control the cooldowns
+
+if (LeftCD &gt; 0)
+{
+    objLeftPowerUp.image_blend=c_red
+    LeftCD--;
+}
+
+if(RightCD &gt; 0)
+{
+    objRightPowerUp.image_blend = c_red
+    RightCD--
+}
+
+else
+{
+    objRightPowerUp.image_blend=c_white
+    objLeftPowerUp.image_blend=c_white
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>
@@ -475,6 +514,10 @@ str1 = global.reroll;
     
 draw_sprite(sprLives,0,50,10);
 draw_text(90,10,"x"+string(hpPlayer));
+
+//Debug for check Cooldowns.
+draw_text (90,50,"LCD"+string(LeftCD));
+draw_text (90,100,"RCD"+string(RightCD));
 </string>
           </argument>
         </arguments>

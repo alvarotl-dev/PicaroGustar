@@ -1,6 +1,6 @@
 /// Function executing the movement state
 //check for state changes
-if (mouse_check_button_released(mb_left))
+if (mouse_check_button_released(mb_left)&& LeftCD == 0)
 {
     switch (leftPowerUp)
     {
@@ -20,7 +20,7 @@ if (mouse_check_button_released(mb_left))
     }
 }
 
-if mouse_check_button_released(mb_right)
+if (mouse_check_button_released(mb_right)&& RightCD == 0)
 {
     switch (rightPowerUp)
     {
