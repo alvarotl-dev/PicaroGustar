@@ -29,7 +29,6 @@
 {
     sprite_index = sprFireballExplosion;
 }
-
 Enemy = instance_place(x,y,objEnemyParent);
 Enemy.hp -= objDmgDealer.DMG;
 

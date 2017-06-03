@@ -177,6 +177,7 @@
       <object>objects\objRoomChange</object>
       <object>objects\LevelGen</object>
       <object>objects\objCreditsManager</object>
+      <object>objects\objTutorial</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
@@ -221,8 +222,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitial</room>
-    <room>rooms\TesteoJavi</room>
+    <room>rooms\roomTutorial</room>
     <room>rooms\room_pursuer_test</room>
+    <room>rooms\TesteoJavi</room>
     <room>rooms\roomCuchillos</room>
     <room>rooms\testingRoomLVGen</room>
     <room>rooms\room1</room>
