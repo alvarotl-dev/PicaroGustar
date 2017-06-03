@@ -74,6 +74,10 @@
         <sprite>sprites\sprSnowBall</sprite>
         <sprite>sprites\sprMage</sprite>
       </sprites>
+      <sprites name="FireMage">
+        <sprite>sprites\sprFireMage</sprite>
+        <sprite>sprites\sprFireBall</sprite>
+      </sprites>
     </sprites>
     <sprites name="Room">
       <sprite>sprites\sprInvWall</sprite>
@@ -178,9 +182,11 @@
       <object>objects\objEnemyPursuer</object>
       <object>objects\objGhost</object>
       <object>objects\objIceMage</object>
+      <object>objects\objFireMage</object>
       <object>objects\objRat</object>
       <objects name="Projectiles">
         <object>objects\objSnowBall</object>
+        <object>objects\objFireBall</object>
         <object>objects\objKnife</object>
       </objects>
       <object>objects\objExplosionArmor</object>
