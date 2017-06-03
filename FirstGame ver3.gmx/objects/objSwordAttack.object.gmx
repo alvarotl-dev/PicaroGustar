@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Creation of the sword
 modDmg = 0;
+objPlayer.LeftCD = 40;
 x=objPlayer.x;
 y=objPlayer.y;
 image_yscale = 1;

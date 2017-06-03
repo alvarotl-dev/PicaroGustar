@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sp = 10
+            <string>sp = 10;
 
 
 </string>
@@ -64,9 +64,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///If meeting the player or a wall it gets destroyed
 move_towards_point(objPlayer.x, objPlayer.y,speed);
-if (place_meeting(x,y,objInvWall))
+if (place_meeting(x,y,objInvWall) || place_meeting(x,y,objPlayer))
 {
     instance_destroy();
 }

@@ -395,17 +395,16 @@ StateMachine();
             <kind>1</kind>
             <string>///Slow player
 
-if(place_meeting(x,y,objSnowBall))
+if(place_meeting(x,y,objSnowBall) &amp;&amp; invOn == 0)
 {
-    SlowBall=1;
-       
-   if (SlowBall=1)
-   {
-        maxSpeed=3;
-   }
-   
-   alarm[2]=60;
-   SlowBall=0;   
+    SlowBall=1;   
+    
+    if (SlowBall=1)
+    {
+         maxSpeed=3;
+    }
+    alarm[2]=60;
+    SlowBall=0;   
 }
 </string>
           </argument>
@@ -459,23 +458,29 @@ if (beingHit == 1)
           <argument>
             <kind>1</kind>
             <string>///Control the cooldowns
+LCDTime = LeftCD / 30;
+RCDTime = RightCD / 30;
 
 if (LeftCD &gt; 0)
 {
-    objLeftPowerUp.image_blend=c_red
+    objLeftPowerUp.image_blend=c_gray
     LeftCD--;
 }
 
 if(RightCD &gt; 0)
 {
-    objRightPowerUp.image_blend = c_red
+    objRightPowerUp.image_blend = c_gray
     RightCD--
 }
 
-else
+if(LeftCD == 0)
 {
-    objRightPowerUp.image_blend=c_white
     objLeftPowerUp.image_blend=c_white
+}
+
+if(RightCD == 0)
+{
+    objRightPowerUp.image_blend=c_white    
 }
 </string>
           </argument>
@@ -514,6 +519,7 @@ str1 = global.reroll;
     
 draw_sprite(sprLives,0,50,10);
 draw_text(90,10,"x"+string(hpPlayer));
+
 
 //Debug for check Cooldowns.
 draw_text (90,50,"LCD"+string(LeftCD));
@@ -564,6 +570,39 @@ if(buttonTime)
     {
         shader_reset();
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Cooldowns on power ups
+
+draw_set_colour(c_white);
+draw_set_font(font1);
+if(LeftCD &gt; 0)
+{
+    draw_text(621,421,round(LCDTime));
+}
+if(RightCD &gt; 0)
+{
+    draw_text(685,421,round(RCDTime));
+}
+
 </string>
           </argument>
         </arguments>

@@ -112,8 +112,8 @@
     <scripts name="States">
       <scripts name="Control">
         <script>scripts\StateControlEnter.gml</script>
-        <script>scripts\StateControlExit.gml</script>
         <script>scripts\StateControlUpdate.gml</script>
+        <script>scripts\StateControlExit.gml</script>
       </scripts>
       <scripts name="Punch attack">
         <script>scripts\StatePunchEnter.gml</script>
@@ -148,6 +148,7 @@
   </shaders>
   <fonts name="fonts">
     <font>fonts\fontReroll</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <objects name="Managers">
@@ -195,8 +196,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\pantallaInicio</room>
-    <room>rooms\room_pursuer_test</room>
     <room>rooms\roomCuchillos</room>
+    <room>rooms\room_pursuer_test</room>
     <room>rooms\testingRoomLVGen</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
