@@ -11,6 +11,7 @@
     <sprites name="Interface">
       <sprite>sprites\sprRerollDice</sprite>
       <sprite>sprites\sprNoPowerUp</sprite>
+      <sprite>sprites\sprFireballPowerUp</sprite>
       <sprite>sprites\sprPunch</sprite>
       <sprite>sprites\sprSword</sprite>
       <sprite>sprites\sprTimeStop</sprite>
@@ -27,6 +28,7 @@
       <sprites name="Attacks">
         <sprite>sprites\sprPunchAttack</sprite>
         <sprite>sprites\sprSwordAttack</sprite>
+        <sprite>sprites\sprFireballAttack</sprite>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -86,6 +88,7 @@
       <sprite>sprites\sprMenu</sprite>
       <sprite>sprites\sprMenuSelector</sprite>
     </sprites>
+    <sprite>sprites\sprFireballExplosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tileSet</background>
@@ -124,6 +127,11 @@
         <script>scripts\StateSwordEnter.gml</script>
         <script>scripts\StateSwordUpdate.gml</script>
         <script>scripts\StateSwordExit.gml</script>
+      </scripts>
+      <scripts name="Fireball Attack">
+        <script>scripts\StateFireballEnter.gml</script>
+        <script>scripts\StateFireballUpdate.gml</script>
+        <script>scripts\StateFireballExit.gml</script>
       </scripts>
       <scripts name="State time stop">
         <script>scripts\StateTimeStopEnter.gml</script>
@@ -164,6 +172,7 @@
       <objects name="Attacks">
         <object>objects\objPunchAttack</object>
         <object>objects\objSwordAttack</object>
+        <object>objects\objFireballPlayer</object>
       </objects>
     </objects>
     <objects name="Interface">
