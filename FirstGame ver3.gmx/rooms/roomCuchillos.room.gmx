@@ -115,7 +115,6 @@
     <instance objName="objInvWall" x="384" y="224" name="inst_77FAB9C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChange" x="384" y="96" name="inst_C62D09FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomManager" x="0" y="0" name="inst_10EC0969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="416" y="352" name="inst_06856356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKnifeThrower" x="224" y="192" name="inst_48C0440F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKnifeThrower" x="512" y="192" name="inst_F7BEF7F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
