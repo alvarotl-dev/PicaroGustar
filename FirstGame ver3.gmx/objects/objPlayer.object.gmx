@@ -41,7 +41,7 @@ baseAt = 1;
 beingHit = 1;  //Is the player allowed to get hits?
 realBeingHit = 1; //If it is, is it being hitted?
 SlowBall = 0;  //Slows the player
-
+invOn = 0;
 
 LeftCD = 0;
 RightCD = 0;
