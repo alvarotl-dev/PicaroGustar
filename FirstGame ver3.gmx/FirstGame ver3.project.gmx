@@ -182,6 +182,7 @@
         <object>objects\objSnowBall</object>
         <object>objects\objKnife</object>
       </objects>
+      <object>objects\objExplosionArmor</object>
     </objects>
     <objects name="Menu">
       <object>objects\objMenu</object>
