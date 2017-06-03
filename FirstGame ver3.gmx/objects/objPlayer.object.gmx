@@ -462,20 +462,24 @@ if (beingHit == 1)
 
 if (LeftCD &gt; 0)
 {
-    objLeftPowerUp.image_blend=c_red
+    objLeftPowerUp.image_blend=c_gray
     LeftCD--;
 }
 
 if(RightCD &gt; 0)
 {
-    objRightPowerUp.image_blend = c_red
+    objRightPowerUp.image_blend = c_gray
     RightCD--
 }
 
-else
+if(LeftCD == 0)
 {
-    objRightPowerUp.image_blend=c_white
     objLeftPowerUp.image_blend=c_white
+}
+
+if(RightCD == 0)
+{
+    objRightPowerUp.image_blend=c_white    
 }
 </string>
           </argument>

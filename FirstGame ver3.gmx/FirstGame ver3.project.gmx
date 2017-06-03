@@ -106,8 +106,8 @@
     <scripts name="States">
       <scripts name="Control">
         <script>scripts\StateControlEnter.gml</script>
-        <script>scripts\StateControlExit.gml</script>
         <script>scripts\StateControlUpdate.gml</script>
+        <script>scripts\StateControlExit.gml</script>
       </scripts>
       <scripts name="Punch attack">
         <script>scripts\StatePunchEnter.gml</script>

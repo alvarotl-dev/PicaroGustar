@@ -64,9 +64,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>//
 move_towards_point(objPlayer.x, objPlayer.y,speed);
-if (place_meeting(x,y,objInvWall))
+if (place_meeting(x,y,objInvWall) || place_meeting(x,y,objPlayer))
 {
     instance_destroy();
 }
