@@ -230,8 +230,14 @@
     <room>rooms\room5</room>
     <room>rooms\roomBoss1</room>
     <room>rooms\duplicateThisRoom</room>
+<<<<<<< HEAD
     <room>rooms\room11</room>
     <room>rooms\roomCredits</room>
+=======
+    <room>rooms\room_A</room>
+    <room>rooms\room_B</room>
+    <room>rooms\room_C</room>
+>>>>>>> eebfcc3346b3582db9438180b555993aeb91c0e1
   </rooms>
   <constants number="5">
     <constant name="CELL_WIDTH">32</constant>
