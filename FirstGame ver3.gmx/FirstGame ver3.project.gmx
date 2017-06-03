@@ -196,6 +196,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\pantallaInicio</room>
+    <room>rooms\TesteoJavi</room>
     <room>rooms\room5</room>
     <room>rooms\room_pursuer_test</room>
     <room>rooms\roomCuchillos</room>
