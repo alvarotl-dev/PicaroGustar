@@ -124,8 +124,8 @@
       </scripts>
       <scripts name="Punch attack">
         <script>scripts\StatePunchEnter.gml</script>
-        <script>scripts\StatePunchExit.gml</script>
         <script>scripts\StatePunchUpdate.gml</script>
+        <script>scripts\StatePunchExit.gml</script>
       </scripts>
       <scripts name="Sword attack">
         <script>scripts\StateSwordEnter.gml</script>
@@ -211,8 +211,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\pantallaInicio</room>
-    <room>rooms\TesteoJavi</room>
     <room>rooms\room5</room>
+    <room>rooms\TesteoJavi</room>
     <room>rooms\room_pursuer_test</room>
     <room>rooms\roomCuchillos</room>
     <room>rooms\testingRoomLVGen</room>

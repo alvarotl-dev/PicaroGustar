@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Enemy = instance_place(x,y,objEnemyParent);
+            <string>if (objDmgDealer.isExplosion = 1)
+{
+    sprite_index = sprFireballExplosion;
+}
+
+Enemy = instance_place(x,y,objEnemyParent);
 Enemy.hp -= objDmgDealer.DMG;
 
 </string>

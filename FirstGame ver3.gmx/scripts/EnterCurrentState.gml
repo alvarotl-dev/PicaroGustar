@@ -11,6 +11,9 @@ switch (state)
     case 2: //Sword attack
         StateSwordEnter();
         break;
+    case 3:
+        StateFireballEnter();
+        break;
     default:
         show_debug_message("State enter not implemented for state Left " + string(state));
         break;

@@ -7,12 +7,13 @@ if (mouse_check_button_released(mb_left)&& LeftCD == 0)
         case 0: //starting with no power up
            break;
         case 1: //punch
-            //if(global.canAttack==1)
-                nextState=1;
+            nextState=1;
             break;
         case 2: //sword
-            //if(global.canAttack==1)
-                nextState=2;
+            nextState=2;
+            break;
+        case 3: //fireball
+            nextState=3;
             break;
         default:
             show_debug_message("State enter not implemented for state " + string(state));

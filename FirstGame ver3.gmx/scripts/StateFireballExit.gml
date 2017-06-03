@@ -1,3 +1,2 @@
-//Exit the state
-nextState = 0;
+//Nothing to do.
 

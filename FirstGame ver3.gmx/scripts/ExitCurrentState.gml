@@ -9,6 +9,9 @@ switch (state)
     case 2: //Sword attack
         StateSwordExit();
         break;
+    case 3:
+        StateFireballExit();
+        break;
     default:
         show_debug_message("State exit not implemented for state Left " + string(state));
         break;

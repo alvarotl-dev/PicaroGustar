@@ -9,6 +9,9 @@ switch (state)
     case 2: //Sword attack
         StateSwordUpdate();
         break;
+    case 3:
+        StateFireballUpdate();
+        break;
     default:
         show_debug_message("State update not implemented for state Left " + string(state));
         break;
