@@ -93,8 +93,7 @@ if (hp&gt;0)
 }
 else 
 {
-    sprite_index=sprPursuerDeath;
-    if (IsAnimationFinished()) instance_destroy();
+    instance_destroy();
 }
 </string>
           </argument>

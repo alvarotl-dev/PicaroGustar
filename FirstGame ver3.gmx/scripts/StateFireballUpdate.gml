@@ -2,7 +2,7 @@
 if(instance_number(objFireballPlayer)<1)
 {
     instance_create(x,y,objFireballPlayer);
-    LeftCD = 60;
+    LeftCD = 30;
 }
 
 nextState = 0;

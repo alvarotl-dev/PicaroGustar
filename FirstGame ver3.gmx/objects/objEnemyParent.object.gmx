@@ -34,8 +34,10 @@ hpMod = 5;
 hpBase = 10;
 velMod = 1; //Turns 0 when time is stopped
 beingHit = 1;
+atMod = 0;
 
-atDamage = atBase + atDamageMod * global.difficulty;
+
+DMG = atBase + atMod * global.difficulty;
 hp = hpBase + hpMod * global.difficulty;
 </string>
           </argument>
@@ -63,7 +65,7 @@ hp = hpBase + hpMod * global.difficulty;
 if (place_meeting(x,y,objDmgDealer)&amp;&amp; beingHit = 1)
 {
     instance_create(x,y,objHit);
-    beingHit = 0;
+    //beingHit = 0;
 }
 </string>
           </argument>
@@ -88,6 +90,7 @@ if (place_meeting(x,y,objDmgDealer)&amp;&amp; beingHit = 1)
             <string>///Death
 if (hp &lt;= 0)
 {
+    beingHit = 1;
     instance_destroy();
 }
 </string>

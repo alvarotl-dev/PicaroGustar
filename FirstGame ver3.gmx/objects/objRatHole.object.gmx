@@ -114,10 +114,10 @@ if (hp&gt;0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x,y,objPlayerHit)&amp;&amp;hp!=0)
+            <string>/*if (place_meeting(x,y,objPlayerHit)&amp;&amp;hp!=0)
 {
     hp-=1;
-}
+}*/
 </string>
           </argument>
         </arguments>

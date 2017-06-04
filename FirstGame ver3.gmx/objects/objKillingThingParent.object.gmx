@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>velMod = 1; 
+            <string>///Initial Variables
+velMod = 1; 
+DMG = 1;
 </string>
           </argument>
         </arguments>

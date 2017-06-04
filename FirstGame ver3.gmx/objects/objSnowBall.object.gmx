@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Intialize the snowball
-sp = 10;
+DMG = 0;// Set the damage of the snowball at 0. We only want a slow movement.
+sp = 7;
+velMod = 1; 
 
-//Call the inherited event.
-event_inherited();
 
 ///Move where the player is.
 move_towards_point(objPlayer.x, objPlayer.y,speed);

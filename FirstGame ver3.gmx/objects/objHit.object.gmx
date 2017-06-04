@@ -25,13 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (objDmgDealer.isExplosion = 1)
+            <string>Enemy = instance_place(x,y,objEnemyParent);
+if(instance_exists(Enemy))
 {
-    sprite_index = sprFireballExplosion;
+    Enemy.beingHit = 0;
+    if (objDmgDealer.isExplosion = 1)
+    {
+        sprite_index = sprFireballExplosion;
+    }
+    
+    Enemy.hp -= objDmgDealer.DMG;
 }
-Enemy = instance_place(x,y,objEnemyParent);
-Enemy.hp -= objDmgDealer.DMG;
-
 </string>
           </argument>
         </arguments>

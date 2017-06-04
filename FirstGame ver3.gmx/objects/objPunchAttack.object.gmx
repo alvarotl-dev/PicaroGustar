@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initial punch state
-modDmg=5;
+modDmg=20;
 objPlayer.beingHit = 0;
 direction = point_direction(x,y,mouse_x,mouse_y);
 image_angle = direction - 90;

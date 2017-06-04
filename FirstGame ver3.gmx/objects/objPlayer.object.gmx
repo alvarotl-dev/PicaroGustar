@@ -39,10 +39,9 @@ stateR=0;
 nextStateR=0;
 baseAt = 1;
 beingHit = 1;  //Is the player allowed to get hits?
-realBeingHit = 1; //If it is, is it being hitted?
 SlowBall = 0;  //Slows the player
 invOn = 0;
-
+damageType = -1
 LeftCD = 0;
 RightCD = 0;
 
@@ -83,6 +82,8 @@ rerollCountLimit=5;
             <kind>1</kind>
             <string>///speed gets back to normal speed
 maxSpeed=6;
+beingHit = 1;
+image_blend = c_white;
 </string>
           </argument>
         </arguments>
@@ -408,7 +409,9 @@ if(place_meeting(x,y,objSnowBall) &amp;&amp; invOn == 0)
     
     if (SlowBall=1)
     {
-         maxSpeed=2;
+        maxSpeed=2;
+        if (maxSpeed = 2)
+        image_blend = c_aqua;     
     }
     alarm[2]=60;
     SlowBall=0;   
@@ -434,10 +437,18 @@ if(place_meeting(x,y,objSnowBall) &amp;&amp; invOn == 0)
           <argument>
             <kind>1</kind>
             <string>///Hit player when collides with something that can damage him
-
+damageType = -1;
 
 if (beingHit == 1)
 {
+    if (place_meeting(x,y,objKillingThingParent))
+    {
+        damageType = 1
+    }
+    if(place_meeting(x,y,objEnemyParent))
+    {
+        damageType = 0;
+    }
     if ( place_meeting(x,y,objKillingThingParent) || place_meeting(x,y,objEnemyParent) )
     {
         instance_create(x,y,objPlayerHit);
