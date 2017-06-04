@@ -100,6 +100,7 @@
       <sprite>sprites\sprInvWall</sprite>
       <sprite>sprites\sprRoomChange</sprite>
       <sprite>sprites\sprRoomStart</sprite>
+      <sprite>sprites\sprPizza</sprite>
     </sprites>
     <sprite>sprites\sprHit</sprite>
     <sprite>sprites\sprPlayerHitmarker</sprite>
@@ -208,6 +209,7 @@
       <object>objects\objReroll</object>
       <object>objects\objTransitionOut</object>
       <object>objects\objTransitionIn</object>
+      <object>objects\objPizza</object>
     </objects>
     <objects name="Enemies">
       <object>objects\objEnemyArmor</object>
