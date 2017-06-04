@@ -342,6 +342,7 @@
     <tile bgName="Atlas_1" x="640" y="96" w="32" h="32" xo="800" yo="288" id="10002826" name="inst_B36EF467" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="640" y="128" w="32" h="32" xo="800" yo="288" id="10002827" name="inst_4EFCF078" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="608" y="128" w="32" h="32" xo="800" yo="288" id="10002828" name="inst_FB64497C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="0" y="160" w="32" h="32" xo="0" yo="0" id="10003803" name="inst_6FD6EBCE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="288" y="224" w="32" h="32" xo="800" yo="352" id="10002809" name="inst_A479D4EA" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="576" y="160" w="32" h="32" xo="800" yo="352" id="10002810" name="inst_18B356D0" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="96" y="288" w="32" h="32" xo="768" yo="352" id="10002811" name="inst_303E7E68" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -350,8 +351,10 @@
     <tile bgName="Atlas_2" x="256" y="128" w="32" h="32" xo="480" yo="480" id="10002822" name="inst_D28EF76A" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_2" x="480" y="160" w="32" h="32" xo="512" yo="480" id="10002823" name="inst_799318E5" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="640" y="32" w="32" h="32" xo="864" yo="192" id="10002831" name="inst_BEB03BAB" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_2" x="160" y="160" w="32" h="96" xo="448" yo="384" id="10002832" name="inst_975F105A" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_2" x="544" y="160" w="32" h="96" xo="448" yo="384" id="10002833" name="inst_3E2A8CBB" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="160" y="224" w="32" h="32" xo="448" yo="448" id="10003805" name="inst_4AAE4ADF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="160" y="160" w="32" h="64" xo="448" yo="384" id="10003804" name="inst_684F0250" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="544" y="224" w="32" h="32" xo="448" yo="448" id="10003806" name="inst_41C3BAC1" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="544" y="160" w="32" h="64" xo="448" yo="384" id="10003807" name="inst_A82E696D" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

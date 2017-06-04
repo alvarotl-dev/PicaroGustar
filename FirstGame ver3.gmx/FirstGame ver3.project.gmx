@@ -248,6 +248,7 @@
     <room>rooms\room_C</room>
     <room>rooms\room_D</room>
     <room>rooms\room_E</room>
+    <room>rooms\room_F</room>
     <room>rooms\roomBoss</room>
     <room>rooms\roomCredits</room>
   </rooms>
