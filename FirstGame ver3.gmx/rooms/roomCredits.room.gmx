@@ -57,6 +57,7 @@
     <instance objName="objInvWall" x="32" y="0" name="inst_AEA6BAAF" locked="0" code="" scaleX="22" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="384" y="352" name="inst_B26BB35C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCreditsManager" x="0" y="448" name="inst_A936A176" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoToBossRoom" x="64" y="96" name="inst_5D5D2B27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

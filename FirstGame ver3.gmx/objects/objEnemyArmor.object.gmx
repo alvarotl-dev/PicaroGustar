@@ -39,10 +39,37 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>beingHit = 0;
+            <string>///Initial
+alarm[1]=10;
+path = path_add();
+beingHit = 0;
 Explosion= 0;
 Skin=0;
 alarmCheck = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>velMod=1;
+alarm[1]=10;
 </string>
           </argument>
         </arguments>
@@ -102,7 +129,83 @@ alarmCheck = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting (x,y,objDmgDealer) &amp;&amp; beingHit = 0)
+            <string>///collisions
+//collisions in the vertical axis
+if(place_meeting(x, y+vspeed, objInvWall)){
+    while(!place_meeting(x, y+sign(vspeed), objInvWall)){
+        y+=sign(vspeed);
+    }
+    vspeed=0;
+}
+
+//collisions in the horizontal axis
+if(place_meeting(x+hspeed, y, objInvWall)){
+    while(!place_meeting(x+sign(hspeed), y, objInvWall)){
+        x+=sign(hspeed);
+    }
+    hspeed=0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///chasing player slowly with a path
+if (hp&gt;0)
+{
+    playerX = (objPlayer.x div 32)*32+16;
+    playerY = (objPlayer.y div 32)*32+16;
+    
+    if (mp_grid_path(global.grid, path, x, y, playerX, playerY, 1))
+    {
+        //The path gets updated each step and when velMod==0 (time stop) speed must be 0
+        path_start(path, 5*velMod, path_action_stop, false);
+    }
+    
+    else speed=0;
+    
+    //time stop needs the animation of the sprite to stop
+    if (velMod==1) liveAnimation=image_index;
+    else image_index=liveAnimation;
+}
+velMod=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///losing armor
+if (place_meeting (x,y,objDmgDealer) &amp;&amp; beingHit = 0)
 { 
        if (Explosion==0)
        {

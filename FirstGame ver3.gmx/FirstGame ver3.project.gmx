@@ -70,6 +70,7 @@
       </sprites>
       <sprites name="Pursuer">
         <sprite>sprites\sprPursuer</sprite>
+        <sprite>sprites\sprPursuerArmored</sprite>
         <sprite>sprites\sprPursuerDeath</sprite>
       </sprites>
       <sprites name="Ghost">
@@ -192,9 +193,12 @@
       <object>objects\objCreditsManager</object>
       <object>objects\objTutorial</object>
       <object>objects\LevelGen</object>
+      <object>objects\objGameEnd</object>
+      <object>objects\objGoToBossRoom</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
+      <object>objects\objPlayerEnd</object>
       <object>objects\objCreditsPlayer</object>
       <object>objects\objPlayerHit</object>
       <objects name="Attacks">
@@ -223,6 +227,7 @@
       <object>objects\objExplosionArmor</object>
       <object>objects\objPureDamage</object>
       <object>objects\boss</object>
+      <object>objects\objBoss1</object>
       <objects name="Projectiles">
         <object>objects\objSnowBall</object>
         <object>objects\objFireBall</object>

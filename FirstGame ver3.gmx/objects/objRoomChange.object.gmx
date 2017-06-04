@@ -55,35 +55,38 @@ if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
     global.roomChange = irandom_range(0,5);
     global.rerollCount += 1;
     global.roomCount += 1;
-    if (global.roomCount&gt;=2)
+    if (global.roomCount&gt;=5)
     {
         global.difficulty+=1;
         global.roomCount=0;
         room_goto(roomBoss);
     }
-    switch (global.roomChange)
+    else 
     {
-        case 0:
-            room_goto(room_A);
-            break;
-        case 1:
-            room_goto(room_B);
-            break;
-        case 2:
-            room_goto(room_C);
-            break;
-        case 3:
-            room_goto(room_D);
-            break;
-        case 4:
-            room_goto(room_E);
-            break;
-        case 5:
-            room_goto(room_F);
-            break;
-        default:
-            break;
-    } 
+        switch (global.roomChange)
+        {
+            case 0:
+                room_goto(room_A);
+                break;
+            case 1:
+                room_goto(room_B);
+                break;
+            case 2:
+                room_goto(room_C);
+                break;
+            case 3:
+                room_goto(room_D);
+                break;
+            case 4:
+                room_goto(room_E);
+                break;
+            case 5:
+                room_goto(room_F);
+                break;
+            default:
+                break;
+        } 
+    }
 }
 
 if (!instance_exists(objEnemyParent)&amp;&amp;image_alpha &lt; 1)
