@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Enemy = instance_place(x,y,objEnemyParent);
+            <string>audio_play_sound(sndSwordHit,1,false);
+Enemy = instance_place(x,y,objEnemyParent);
 if(instance_exists(Enemy))
 {
     Enemy.beingHit = 0;

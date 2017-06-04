@@ -106,6 +106,7 @@ alarmCheck = 0;
 { 
        if (Explosion==0)
        {
+            audio_play_sound(sndArmor, 1, false);
             instance_create(x,y,objExplosionArmor);
             Skin = 1
             Explosion = 1;

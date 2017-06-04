@@ -52,21 +52,14 @@ image_alpha = 0;
             <string>///room change
 if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
 {
-    global.roomChange = irandom_range(0,2);
+    global.roomChange = irandom_range(0,4);
     global.rerollCount+=1;
     global.roomCount+=1;
     if (global.roomCount&gt;=2)
     {
         global.difficulty+=1;
-        switch (global.difficulty)
-        {
-            case 1:
-                global.roomCount=0;
-                room_goto(roomBoss1);
-                break;
-            default:
-                break;
-        }
+        global.roomCount=0;
+        room_goto(roomBoss);
     }
     switch (global.roomChange)
     {
@@ -79,10 +72,17 @@ if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
         case 2:
             room_goto(room_C);
             break;
+        case 3:
+            room_goto(room_D);
+            break;
+        case 4:
+            room_goto(room_E);
+            break;
         default:
             break;
     } 
 }
+
 if (!instance_exists(objEnemyParent)&amp;&amp;image_alpha &lt; 1)
     image_alpha += 0.1;
 else image_alpha = 0;

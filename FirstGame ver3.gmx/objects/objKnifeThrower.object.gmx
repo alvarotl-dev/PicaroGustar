@@ -79,7 +79,7 @@ alarm[0]=atSp*velMod;
             <kind>1</kind>
             <string>///Attack
 atSp = irandom_range (190, 250);
-
+audio_play_sound(sndKnifeThrower,1,false);
 if (hp&gt;0)
 {   
     if(instance_number(objKnife)&lt;6)

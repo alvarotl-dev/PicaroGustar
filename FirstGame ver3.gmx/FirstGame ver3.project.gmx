@@ -9,8 +9,8 @@
     <sound>sound\sndPunchHit</sound>
     <sound>sound\sndFireball</sound>
     <sound>sound\sndSword</sound>
-    <sound>sound\sndSwordArmor</sound>
     <sound>sound\sndSwordHit</sound>
+    <sound>sound\sndKnifeThrower</sound>
     <sound>sound\sndIceball</sound>
     <sound>sound\sndMenuSelect</sound>
     <sound>sound\sndMenuEnter</sound>
@@ -18,6 +18,8 @@
     <sound>sound\sndCredits</sound>
     <sound>sound\sndMenu</sound>
     <sound>sound\sndRoom1</sound>
+    <sound>sound\sndBurning</sound>
+    <sound>sound\sndArmor</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Interface">
@@ -209,7 +211,6 @@
     </objects>
     <objects name="Enemies">
       <object>objects\objEnemyArmor</object>
-      <object>objects\boss</object>
       <object>objects\objKnifeThrower</object>
       <object>objects\objEnemyPursuer</object>
       <object>objects\objGhost</object>
@@ -219,6 +220,7 @@
       <object>objects\objRatHole</object>
       <object>objects\objExplosionArmor</object>
       <object>objects\objPureDamage</object>
+      <object>objects\boss</object>
       <objects name="Projectiles">
         <object>objects\objSnowBall</object>
         <object>objects\objFireBall</object>
@@ -246,7 +248,7 @@
     <room>rooms\room_C</room>
     <room>rooms\room_D</room>
     <room>rooms\room_E</room>
-    <room>rooms\roomBoss1</room>
+    <room>rooms\roomBoss</room>
     <room>rooms\roomCredits</room>
   </rooms>
   <constants number="5">

@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objRoomManager" x="128" y="64" name="inst_A75FA545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomManager" x="128" y="96" name="inst_A75FA545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="64" y="64" name="inst_6DE03597" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="64" y="96" name="inst_25BF91FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="64" y="224" name="inst_454F5B34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -115,15 +115,11 @@
     <instance objName="objInvWall" x="640" y="0" name="inst_31B05ED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="672" y="0" name="inst_6BF0A5FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChange" x="640" y="32" name="inst_FFA4FE06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="256" y="128" name="inst_417B7FEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="160" name="inst_2BC64A34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="288" name="inst_4DFB8A21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="512" y="288" name="inst_D0926C0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="512" y="320" name="inst_C6053A5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="320" name="inst_7D946A59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="352" y="224" name="inst_652549A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="544" y="224" name="inst_D559E88B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="160" y="224" name="inst_FCD64178" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="256" y="128" name="inst_417B7FEA" locked="0" code="" scaleX="1" scaleY="0.5625" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="480" y="160" name="inst_2BC64A34" locked="0" code="" scaleX="0.939999997615814" scaleY="0.59375" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="480" y="294" name="inst_4DFB8A21" locked="0" code="" scaleX="1.96774196624756" scaleY="0.96875" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="160" y="224" name="inst_47032370" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="544" y="224" name="inst_1C2B49B0" locked="0" code="" scaleX="1.05999994277954" scaleY="0.439999997615814" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Atlas_1" x="96" y="64" w="32" h="32" xo="800" yo="288" id="10002562" name="inst_C6285F09" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -354,9 +350,8 @@
     <tile bgName="Atlas_2" x="256" y="128" w="32" h="32" xo="480" yo="480" id="10002822" name="inst_D28EF76A" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_2" x="480" y="160" w="32" h="32" xo="512" yo="480" id="10002823" name="inst_799318E5" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="640" y="32" w="32" h="32" xo="864" yo="192" id="10002831" name="inst_BEB03BAB" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_2" x="160" y="160" w="32" h="96" xo="448" yo="384" id="10002832" name="inst_975F105A" depth="-2000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_2" x="544" y="160" w="32" h="96" xo="448" yo="384" id="10002833" name="inst_3E2A8CBB" depth="-2000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_2" x="352" y="160" w="32" h="96" xo="608" yo="480" id="10002834" name="inst_69C49B72" depth="-2000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="160" y="160" w="32" h="96" xo="448" yo="384" id="10002832" name="inst_975F105A" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="544" y="160" w="32" h="96" xo="448" yo="384" id="10002833" name="inst_3E2A8CBB" depth="-11001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -66,6 +66,7 @@ alarm[0] = irandom_range(15,30);
             <kind>1</kind>
             <string>///Create the fireball and set the alarm
 
+audio_play_sound(sndFireball,1,false);
 instance_create (x,y,objFireBall);
 alarm [0] = irandom_range(15,30)*velMod; 
 </string>
