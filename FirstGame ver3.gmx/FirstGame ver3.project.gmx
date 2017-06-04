@@ -33,6 +33,7 @@
       <sprite>sprites\sprTimeStop</sprite>
       <sprite>sprites\sprInvulnerable</sprite>
       <sprite>sprites\sprLives</sprite>
+      <sprite>sprites\sprCursor</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>

@@ -437,8 +437,11 @@ room_goto(roomInitial);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Escape
+            <string>///Custom cursor and Esc to the menu.
+//Cursor
+cursor_sprite = sprCursor;
 
+//Escape
 if (keyboard_check(vk_escape))
 {
     instance_create (0, 0, objTransitionIn);

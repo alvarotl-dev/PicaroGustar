@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///INITIAL VARIABLES
+cursor_sprite = sprCursor;
 instance_create (0, 0, objTransitionOut);
 currOption = 0;
+
 
 audio_stop_all();
 audio_play_sound(sndMenu,1,true);
