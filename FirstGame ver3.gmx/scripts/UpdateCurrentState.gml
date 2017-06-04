@@ -12,6 +12,9 @@ switch (state)
     case 3:
         StateFireballUpdate();
         break;
+    case 666:
+        StateDeathUpdate();
+        break;
     default:
         show_debug_message("State update not implemented for state Left " + string(state));
         break;

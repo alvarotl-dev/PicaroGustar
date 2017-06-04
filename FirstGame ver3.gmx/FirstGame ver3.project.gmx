@@ -21,6 +21,7 @@
     <sound>sound\sndBurning</sound>
     <sound>sound\sndArmor</sound>
     <sound>sound\sndFinalBoss</sound>
+    <sound>sound\sndPlayerDeath</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Interface">
@@ -35,6 +36,7 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
+      <sprite>sprites\sprPlayerDeath</sprite>
       <sprite>sprites\sprPlayerHit</sprite>
       <sprite>sprites\sprPlayerPunch</sprite>
       <sprite>sprites\sprPlayerWalk</sprite>
