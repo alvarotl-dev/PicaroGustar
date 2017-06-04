@@ -232,6 +232,8 @@
     <room>rooms\room_A</room>
     <room>rooms\room_B</room>
     <room>rooms\room_C</room>
+    <room>rooms\room_D</room>
+    <room>rooms\room_E</room>
     <room>rooms\roomBoss1</room>
     <room>rooms\roomCredits</room>
   </rooms>
