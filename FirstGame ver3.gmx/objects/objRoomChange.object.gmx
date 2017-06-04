@@ -52,9 +52,9 @@ image_alpha = 0;
             <string>///room change
 if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
 {
-    global.roomChange = irandom_range(0,4);
-    global.rerollCount+=1;
-    global.roomCount+=1;
+    global.roomChange = irandom_range(0,5);
+    global.rerollCount += 1;
+    global.roomCount += 1;
     if (global.roomCount&gt;=2)
     {
         global.difficulty+=1;
@@ -77,6 +77,9 @@ if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
             break;
         case 4:
             room_goto(room_E);
+            break;
+        case 5:
+            room_goto(room_F);
             break;
         default:
             break;

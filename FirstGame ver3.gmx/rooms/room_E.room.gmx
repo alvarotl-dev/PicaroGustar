@@ -52,58 +52,13 @@
   </views>
   <instances>
     <instance objName="objRoomManager" x="128" y="64" name="inst_A75FA545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="32" name="inst_E74BC071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="64" name="inst_DEE73F9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="96" name="inst_1F3BE76F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="128" name="inst_935DDF2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="160" name="inst_0B473759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="192" name="inst_1E1DA4FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="224" name="inst_30C79160" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="256" name="inst_EB705E8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="288" name="inst_75E0AE0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="320" name="inst_0FE2B845" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="352" name="inst_F9E6CD6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="384" name="inst_32FE0AF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="96" y="384" name="inst_DCE747E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="128" y="384" name="inst_0B0C4751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="160" y="384" name="inst_74C550AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="192" y="384" name="inst_C03C3481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="224" y="384" name="inst_2F32D8AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="256" y="384" name="inst_2C664D19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="288" y="384" name="inst_9651954B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="320" y="384" name="inst_C4842A60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="352" y="384" name="inst_6DD6490C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="416" y="384" name="inst_5A6D9AF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="384" y="384" name="inst_9042FF47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="448" y="384" name="inst_9F37EE26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="384" name="inst_146E68B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="512" y="384" name="inst_3DA1643E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="544" y="384" name="inst_BC501DAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="576" y="384" name="inst_505115E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="608" y="384" name="inst_D8DA4A42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="640" y="384" name="inst_27B0F885" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="384" name="inst_E5AABE85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="352" name="inst_B0C3D241" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="320" name="inst_7F510D40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="288" name="inst_11F8C4AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="256" name="inst_AC34E3C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="224" name="inst_49FA9512" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="192" name="inst_75790BB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="128" name="inst_C0647CBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="160" name="inst_EAA859F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="96" name="inst_44050722" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="64" name="inst_0B22CA06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="672" y="32" name="inst_65893422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="640" y="32" name="inst_725C2D09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="608" y="32" name="inst_A19D6552" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="576" y="32" name="inst_6A5AFE86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="544" y="32" name="inst_D6021684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="512" y="32" name="inst_5A59B947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="32" name="inst_9D83B442" locked="0" code="" scaleX="-12" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="32" name="inst_B1717D51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="150" y="177" name="inst_278A098E" locked="0" code="" scaleX="2.71875" scaleY="3.52999997138977" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="544" y="192" name="inst_55650679" locked="0" code="" scaleX="1.03225803375244" scaleY="0.439999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="150" y="171" name="inst_278A098E" locked="0" code="" scaleX="2.625" scaleY="3.47000002861023" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="548" y="192" name="inst_55650679" locked="0" code="" scaleX="0.774193525314331" scaleY="0.21875" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChange" x="608" y="320" name="inst_8F5B798B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="40" y="392" name="inst_1B7C51AA" locked="0" code="" scaleX="22" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="685" y="-10" name="inst_0940CED6" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="61" y="21" name="inst_CA00EAB9" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="53" y="29" name="inst_3F97D5B2" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Atlas_1" x="96" y="64" w="32" h="32" xo="704" yo="288" id="10002836" name="inst_0CF8205A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -52,12 +52,19 @@
   </views>
   <instances>
     <instance objName="objRoomManager" x="128" y="64" name="inst_A75FA545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="512" y="96" name="inst_66323FEF" locked="0" code="" scaleX="1.5625" scaleY="1.61290323734283" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="234" y="143" name="inst_27055599" locked="0" code="" scaleX="1.41935479640961" scaleY="1.125" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="288" y="256" name="inst_FA22BE5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="288" name="inst_AD6D746D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="192" y="352" name="inst_4F9EDEAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="516" y="100" name="inst_66323FEF" locked="0" code="" scaleX="1.375" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="234" y="143" name="inst_27055599" locked="0" code="" scaleX="1.35483872890472" scaleY="0.290322571992874" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="192" y="353" name="inst_4F9EDEAE" locked="0" code="" scaleX="0.9375" scaleY="0.21875" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChange" x="592" y="306" name="inst_05DA9375" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPureDamage" x="515" y="97" name="inst_8B8097F7" locked="0" code="" scaleX="1.46875" scaleY="1.125" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="52" y="32" name="inst_0C2834DC" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="76" y="399" name="inst_199CCF00" locked="0" code="" scaleX="20.4200000762939" scaleY="1.09375" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="682" y="30" name="inst_B7E7D8CD" locked="0" code="" scaleX="1.30999994277954" scaleY="12.5483875274658" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="58" y="18" name="inst_39918051" locked="0" code="" scaleX="20.125" scaleY="1.125" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="289" y="257" name="inst_ACE87046" locked="0" code="" scaleX="0.9375" scaleY="0.125" colour="4294967295" rotation="0"/>
+    <instance objName="objPureDamage" x="288" y="256" name="inst_825FE2BB" locked="0" code="" scaleX="1" scaleY="0.1875" colour="4294967295" rotation="0"/>
+    <instance objName="objPureDamage" x="480" y="288" name="inst_707E9D90" locked="0" code="" scaleX="1" scaleY="0.1875" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="481" y="289" name="inst_D22F588B" locked="0" code="" scaleX="0.9375" scaleY="0.125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Atlas_2" x="96" y="64" w="32" h="32" xo="128" yo="384" id="10003226" name="inst_B9600546" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

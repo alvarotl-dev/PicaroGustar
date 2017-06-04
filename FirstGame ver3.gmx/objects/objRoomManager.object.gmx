@@ -111,6 +111,7 @@ mp_grid_add_instances(global.grid, objInvWall, false);
             <kind>1</kind>
             <string>///Creation of the enemies and music
 
+//Music will be random in each room 
 audio_stop_all();
 musicRandomize = irandom(0);
 switch (musicRandomize)
@@ -128,6 +129,8 @@ switch (musicRandomize)
         show_debug_message("No sound found");
         break;
 }
+
+//Enemys will be randomin each room.
 
 switch (room)
 {
@@ -245,6 +248,120 @@ switch (room)
         }
         break;
     
+    case (room_D):
+        switch (global.difficulty)
+        {
+            case 0:
+                randomizeEnemy();
+                instance_create(192, 96, enemy);
+                randomizeEnemy();
+                instance_create(128, 320, enemy);
+                randomizeEnemy();
+                instance_create(608, 192, enemy);
+                break;
+    
+            case 1:
+                randomizeEnemy();
+                instance_create(192, 96, enemy);
+                randomizeEnemy();
+                instance_create(128, 320, enemy);
+                randomizeEnemy();
+                instance_create(608, 192, enemy);
+                randomizeEnemy();
+                instance_create(416, 96, enemy);
+                break;
+                
+            case 2:
+                randomizeEnemy();
+                instance_create(192, 96, enemy);
+                randomizeEnemy();
+                instance_create(128, 320, enemy);
+                randomizeEnemy();
+                instance_create(608, 192, enemy);
+                randomizeEnemy();
+                instance_create(416, 96, enemy);
+                randomizeEnemy();
+                instance_create(352, 320, enemy);
+                break;
+        }
+        break;
+    
+        case (room_E):
+        switch (global.difficulty)
+        {
+            case 0:
+                randomizeEnemy();
+                instance_create(224, 96, enemy);
+                randomizeEnemy();
+                instance_create(640, 288, enemy);
+                randomizeEnemy();
+                instance_create(467, 344, enemy);
+                break;
+    
+            case 1:
+                randomizeEnemy();
+                instance_create(224, 96, enemy);
+                randomizeEnemy();
+                instance_create(640, 288, enemy);
+                randomizeEnemy();
+                instance_create(467, 344, enemy);
+                randomizeEnemy();
+                instance_create(448, 128, enemy);
+                break;
+                
+            case 2:
+                randomizeEnemy();
+                instance_create(224, 96, enemy);
+                randomizeEnemy();
+                instance_create(640, 288, enemy);
+                randomizeEnemy();
+                instance_create(467, 344, enemy);
+                randomizeEnemy();
+                instance_create(448, 128, enemy);
+                randomizeEnemy();
+                instance_create(320, 352, enemy);
+                break;
+        }
+        break;
+        
+        case (room_F):
+        switch (global.difficulty)
+        {
+            case 0:
+                randomizeEnemy();
+                instance_create(640, 256, enemy);
+                randomizeEnemy();
+                instance_create(160, 256, enemy);
+                randomizeEnemy();
+                instance_create(320, 352, enemy);
+                break;
+    
+            case 1:
+                randomizeEnemy();
+                instance_create(640, 256, enemy);
+                randomizeEnemy();
+                instance_create(160, 256, enemy);
+                randomizeEnemy();
+                instance_create(320, 352, enemy);
+                randomizeEnemy();
+                instance_create(128, 128, enemy);
+                break;
+                
+            case 2:
+                randomizeEnemy();
+                instance_create(640, 256, enemy);
+                randomizeEnemy();
+                instance_create(160, 256, enemy);
+                randomizeEnemy();
+                instance_create(320, 352, enemy);
+                randomizeEnemy();
+                instance_create(128, 128, enemy);
+                randomizeEnemy();
+                instance_create(544, 192, enemy);
+                break;
+        }
+        break;
+        
     default:
         show_debug_message("PROBLEMS CHECKING ROOM");
         break;
