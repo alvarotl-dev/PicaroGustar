@@ -26,8 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>velMod = 1; 
-
-
 </string>
           </argument>
         </arguments>
@@ -50,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = sp*velMod
+            <string>speed = sp*velMod;
 </string>
           </argument>
         </arguments>

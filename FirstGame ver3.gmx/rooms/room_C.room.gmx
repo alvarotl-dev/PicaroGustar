@@ -52,13 +52,13 @@
   </views>
   <instances>
     <instance objName="objRoomManager" x="128" y="64" name="inst_A75FA545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHit" x="224" y="128" name="inst_BCE00D6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="32" y="32" name="inst_6CA3C408" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="64" y="416" name="inst_09953DB0" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="704" y="0" name="inst_D35401E5" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="32" y="0" name="inst_832846FC" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="224" y="96" name="inst_5B8D68A8" locked="0" code="" scaleX="10" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="224" y="256" name="inst_3012D3A2" locked="0" code="" scaleX="10" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="44" y="32" name="inst_6CA3C408" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="56" y="403" name="inst_09953DB0" locked="0" code="" scaleX="21.1290321350098" scaleY="1.54999995231628" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="692" y="1" name="inst_D35401E5" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="33" y="10" name="inst_832846FC" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPureDamage" x="248" y="114" name="inst_6B887E91" locked="0" code="" scaleX="8.5625" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
+    <instance objName="objPureDamage" x="249" y="274" name="inst_4C26D71B" locked="0" code="" scaleX="8.625" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChange" x="567" y="342" name="inst_1C36B4C9" locked="0" code="" scaleX="0.689999997615814" scaleY="0.779999971389771" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Atlas_1" x="96" y="96" w="32" h="32" xo="608" yo="288" id="10002204" name="inst_16EDADC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -81,8 +81,6 @@
     <tile bgName="Atlas_1" x="448" y="352" w="32" h="32" xo="608" yo="288" id="10002223" name="inst_21C528BA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="480" y="352" w="32" h="32" xo="608" yo="288" id="10002224" name="inst_3D01E11C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="512" y="352" w="32" h="32" xo="608" yo="288" id="10002225" name="inst_FA31D603" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_1" x="544" y="352" w="32" h="32" xo="608" yo="288" id="10002226" name="inst_9CE91EF7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_1" x="576" y="352" w="32" h="32" xo="608" yo="288" id="10002227" name="inst_C4D5F794" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="608" y="352" w="32" h="32" xo="608" yo="288" id="10002228" name="inst_1DBF4D72" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="640" y="352" w="32" h="32" xo="608" yo="288" id="10002229" name="inst_1EB92BEA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="640" y="320" w="32" h="32" xo="608" yo="288" id="10002230" name="inst_644762AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -226,8 +224,6 @@
     <tile bgName="Atlas_1" x="448" y="288" w="32" h="32" xo="608" yo="288" id="10002385" name="inst_2FE2DED9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="480" y="288" w="32" h="32" xo="608" yo="288" id="10002386" name="inst_F1D14FBC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="608" y="320" w="32" h="32" xo="608" yo="288" id="10002391" name="inst_64B050ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_1" x="576" y="320" w="32" h="32" xo="608" yo="288" id="10002392" name="inst_20DBF8C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Atlas_1" x="544" y="320" w="32" h="32" xo="608" yo="288" id="10002393" name="inst_34CD4191" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="512" y="320" w="32" h="32" xo="608" yo="288" id="10002394" name="inst_AE1E2054" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="480" y="320" w="32" h="32" xo="608" yo="288" id="10002395" name="inst_1AB57287" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="448" y="320" w="32" h="32" xo="608" yo="288" id="10002396" name="inst_D17EF1F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -301,6 +297,10 @@
     <tile bgName="Atlas_1" x="128" y="32" w="32" h="32" xo="608" yo="256" id="10002475" name="inst_27724C2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="96" y="32" w="32" h="32" xo="608" yo="256" id="10002476" name="inst_98791E55" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="64" y="32" w="32" h="32" xo="576" yo="256" id="10002477" name="inst_76602924" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="544" y="320" w="32" h="32" xo="608" yo="192" id="10002558" name="inst_32CA3369" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="576" y="320" w="32" h="32" xo="640" yo="192" id="10002559" name="inst_AB5EEB4B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="576" y="352" w="32" h="32" xo="640" yo="224" id="10002560" name="inst_EB85E6DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Atlas_2" x="544" y="352" w="32" h="32" xo="608" yo="224" id="10002561" name="inst_4CAABC9A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="224" y="96" w="64" h="96" xo="480" yo="256" id="10002495" name="inst_5139F7CF" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="480" y="96" w="64" h="96" xo="512" yo="256" id="10002496" name="inst_E2B5A55B" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Atlas_1" x="288" y="96" w="32" h="96" xo="512" yo="256" id="10002497" name="inst_9BFB86CA" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -159,6 +159,7 @@
       </scripts>
     </scripts>
     <script>scripts\CheckCollision.gml</script>
+    <script>scripts\randomizeEnemy.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -170,7 +171,6 @@
   </fonts>
   <objects name="objects">
     <objects name="Managers">
-      <object>objects\objPlayerHit</object>
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
       <object>objects\objRoomChange</object>
@@ -181,6 +181,7 @@
     <objects name="Player">
       <object>objects\objPlayer</object>
       <object>objects\objCreditsPlayer</object>
+      <object>objects\objPlayerHit</object>
       <objects name="Attacks">
         <object>objects\objPunchAttack</object>
         <object>objects\objSwordAttack</object>
@@ -203,12 +204,14 @@
       <object>objects\objIceMage</object>
       <object>objects\objFireMage</object>
       <object>objects\objRat</object>
+      <object>objects\objRatHole</object>
+      <object>objects\objExplosionArmor</object>
+      <object>objects\objPureDamage</object>
       <objects name="Projectiles">
         <object>objects\objSnowBall</object>
         <object>objects\objFireBall</object>
         <object>objects\objKnife</object>
       </objects>
-      <object>objects\objExplosionArmor</object>
     </objects>
     <objects name="Menu">
       <object>objects\objMenu</object>
@@ -222,20 +225,15 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitial</room>
-    <room>rooms\roomTutorial</room>
     <room>rooms\room_pursuer_test</room>
-    <room>rooms\TesteoJavi</room>
-    <room>rooms\roomCuchillos</room>
     <room>rooms\testingRoomLVGen</room>
-    <room>rooms\room1</room>
-    <room>rooms\room2</room>
-    <room>rooms\room5</room>
-    <room>rooms\roomBoss1</room>
     <room>rooms\duplicateThisRoom</room>
-    <room>rooms\roomCredits</room>
+    <room>rooms\roomTutorial</room>
     <room>rooms\room_A</room>
     <room>rooms\room_B</room>
     <room>rooms\room_C</room>
+    <room>rooms\roomBoss1</room>
+    <room>rooms\roomCredits</room>
   </rooms>
   <constants number="5">
     <constant name="CELL_WIDTH">32</constant>

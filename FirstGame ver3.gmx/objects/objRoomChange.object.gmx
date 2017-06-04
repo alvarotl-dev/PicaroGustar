@@ -51,8 +51,9 @@
             <string>///room change
 if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
 {
-    global.roomChange = irandom_range(0,1);
+    global.roomChange = irandom_range(0,2);
     global.rerollCount+=1;
+    global.roomCount+=1;
     if (global.roomCount&gt;=2)
     {
         global.difficulty+=1;
@@ -66,15 +67,16 @@ if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
                 break;
         }
     }
-    global.roomCount+=1;
     switch (global.roomChange)
     {
         case 0:
-            room_goto(room1);
+            room_goto(room_A);
             break;
         case 1:
-            room_goto(room2);
-            instance_destroy();
+            room_goto(room_B);
+            break;
+        case 2:
+            room_goto(room_C);
             break;
         default:
             break;
