@@ -570,8 +570,6 @@ if (mouse_check_button(mb_right) &amp;&amp; timeStopAvailable==1)
     buttonTime=true;
     timeStopAvailable=0;
     alarm[0]=150;
-    audio_play_sound(sndTimeStop,1,false);
-    rightPowerUp=0;
 }
 if(buttonTime)
 {

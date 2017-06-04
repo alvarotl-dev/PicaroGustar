@@ -6,6 +6,18 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sndTimeStop</sound>
+    <sound>sound\sndPunchHit</sound>
+    <sound>sound\sndFireball</sound>
+    <sound>sound\sndSword</sound>
+    <sound>sound\sndSwordArmor</sound>
+    <sound>sound\sndSwordHit</sound>
+    <sound>sound\sndIceball</sound>
+    <sound>sound\sndMenuSelect</sound>
+    <sound>sound\sndMenuEnter</sound>
+    <sound>sound\sndTransition</sound>
+    <sound>sound\sndCredits</sound>
+    <sound>sound\sndMenu</sound>
+    <sound>sound\sndRoom1</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Interface">

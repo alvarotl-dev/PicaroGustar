@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprRoomChange</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>randomize();
+image_alpha = 0;
 </string>
           </argument>
         </arguments>
@@ -82,6 +83,9 @@ if (place_meeting(x,y,objPlayer)&amp;&amp;!instance_exists(objEnemyParent))
             break;
     } 
 }
+if (!instance_exists(objEnemyParent)&amp;&amp;image_alpha &lt; 1)
+    image_alpha += 0.1;
+else image_alpha = 0;
 </string>
           </argument>
         </arguments>

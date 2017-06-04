@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///variables
-
+audio_play_sound(sndTransition,1,false);
 transitionAlpha = 0;
 </string>
           </argument>

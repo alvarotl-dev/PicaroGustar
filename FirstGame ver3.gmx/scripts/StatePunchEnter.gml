@@ -1,4 +1,7 @@
 //Calculate the position of the player
+
+audio_play_sound(sndPunchHit,1,false);
+
 dirMouseX = mouse_x - x;
 dirMouseY = mouse_y - y;
 distToMouse = sqrt(dirMouseX * dirMouseX + dirMouseY * dirMouseY);

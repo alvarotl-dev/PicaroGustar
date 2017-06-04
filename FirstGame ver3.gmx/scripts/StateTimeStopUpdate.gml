@@ -9,6 +9,7 @@ if (instance_exists(objKillingThingParent))
 if (instance_exists(objCreditsManager))
 {
     objCreditsManager.velMod=0;
+    audio_pause_sound(sndCredits);
 }
 
 if (buttonTime=false)

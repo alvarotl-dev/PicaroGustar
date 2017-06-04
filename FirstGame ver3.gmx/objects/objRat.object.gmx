@@ -41,6 +41,7 @@
             <kind>1</kind>
             <string>///Initial
 path = path_add();
+hp=1;
 </string>
           </argument>
         </arguments>

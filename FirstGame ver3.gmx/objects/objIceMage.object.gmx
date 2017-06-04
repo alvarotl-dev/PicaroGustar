@@ -65,6 +65,8 @@ alarm[1] = irandom_range(15,30);
           <argument>
             <kind>1</kind>
             <string>///Create another snowball and set the alarm.
+
+audio_play_sound(sndIceball,1,false);
 instance_create (x+16,y,objSnowBall);
 alarm [1] = irandom_range(15,30)*velMod;
 </string>
@@ -91,6 +93,7 @@ alarm [1] = irandom_range(15,30)*velMod;
             <kind>1</kind>
             <string>///Create the snowball and set the alarm
 
+audio_play_sound(sndIceball,1,false);
 instance_create (x-16,y,objSnowBall);
 alarm [0] = irandom_range(15,30)*velMod; 
 </string>
