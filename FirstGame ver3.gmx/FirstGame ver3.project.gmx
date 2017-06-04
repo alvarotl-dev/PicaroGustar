@@ -34,6 +34,7 @@
       <sprite>sprites\sprInvulnerable</sprite>
       <sprite>sprites\sprLives</sprite>
       <sprite>sprites\sprCursor</sprite>
+      <sprite>sprites\sprCursorClick</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>

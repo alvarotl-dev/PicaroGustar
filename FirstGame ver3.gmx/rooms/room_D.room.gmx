@@ -117,7 +117,7 @@
     <instance objName="objRoomChange" x="640" y="32" name="inst_FFA4FE06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="256" y="128" name="inst_417B7FEA" locked="0" code="" scaleX="1" scaleY="0.5625" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="480" y="160" name="inst_2BC64A34" locked="0" code="" scaleX="1" scaleY="0.28125" colour="4294967295" rotation="0"/>
-    <instance objName="objInvWall" x="480" y="294" name="inst_4DFB8A21" locked="0" code="" scaleX="2" scaleY="0.970000028610229" colour="4294967295" rotation="0"/>
+    <instance objName="objInvWall" x="480" y="294" name="inst_4DFB8A21" locked="0" code="" scaleX="2" scaleY="0.97000002861023" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="160" y="224" name="inst_47032370" locked="0" code="" scaleX="1" scaleY="0.21875" colour="4294967295" rotation="0"/>
     <instance objName="objInvWall" x="544" y="224" name="inst_1C2B49B0" locked="0" code="" scaleX="1" scaleY="0.1875" colour="4294967295" rotation="0"/>
   </instances>
