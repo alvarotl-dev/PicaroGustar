@@ -49,6 +49,10 @@ Skin=0;
 alarmCheck = 0;
 hp = 200;
 
+//he's got his own music
+audio_stop_all();
+audio_play_sound(sndFinalBoss,1,true);
+
 alarm[1] = irandom_range(40, 80);
 </string>
           </argument>

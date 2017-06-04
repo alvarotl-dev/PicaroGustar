@@ -20,6 +20,7 @@
     <sound>sound\sndRoom1</sound>
     <sound>sound\sndBurning</sound>
     <sound>sound\sndArmor</sound>
+    <sound>sound\sndFinalBoss</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Interface">
