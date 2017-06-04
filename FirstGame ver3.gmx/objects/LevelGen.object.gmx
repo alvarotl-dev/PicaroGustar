@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Create the level
+
+//THIS IS A RANDOM LEVEL GENERATOR IN PROCCESS
+
+
 //Resize the room
 room_width = (CELL_WIDTH /16)*384;
 room_height = (CELL_HEIGHT/16)*240;

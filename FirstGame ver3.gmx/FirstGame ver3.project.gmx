@@ -174,9 +174,9 @@
       <object>objects\objInvWall</object>
       <object>objects\objRoomManager</object>
       <object>objects\objRoomChange</object>
-      <object>objects\LevelGen</object>
       <object>objects\objCreditsManager</object>
       <object>objects\objTutorial</object>
+      <object>objects\LevelGen</object>
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
