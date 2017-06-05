@@ -77,7 +77,7 @@ alarm[2] = 20;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="5">
+    <event eventtype="2" enumb="6">
       <action>
         <libid>1</libid>
         <id>321</id>
@@ -95,6 +95,49 @@ alarm[2] = 20;
           <argument>
             <kind>2</kind>
             <string>I think you are able to start the game now. Press ENTER and go play! Have fun :D</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>321</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_message</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>You can use Reroll to change both of your powers at once. You only have got 2 rerolls available. If you use any of them you will get another one when you go through 3 rooms. You can cast reroll using 'R'. </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[6]=5;
+</string>
           </argument>
         </arguments>
       </action>
@@ -137,6 +180,7 @@ alarm[2] = 20;
           <argument>
             <kind>1</kind>
             <string>alarm[5] = 30;
+instruction = 3;
 </string>
           </argument>
         </arguments>
@@ -311,36 +355,40 @@ if (keyboard_check(vk_enter))
 switch (instruction)
 {
     case 1:
-    objPlayer.leftPowerUp = 1;
-    objPlayer.rightPowerUp = 0;
-    if (mouse_check_button_pressed(mb_left)&amp;&amp;aux==0)
-    {
-        alarm[3] = 15;
-        aux=1;
-    }
-    break;
+        objPlayer.leftPowerUp = 1;
+        objPlayer.rightPowerUp = 0;
+        if (mouse_check_button_pressed(mb_left)&amp;&amp;aux==0)
+        {
+            alarm[3] = 15;
+            aux=1;
+        }
+        break;
     
     case 2:
-    if (aux==1)
+        if (aux==1)
+        {
+            objPlayer.leftPowerUp = 0;
+            objPlayer.rightPowerUp = 1;
+        }
+        else
+        {
+            objPlayer.leftPowerUp = 0;
+            objPlayer.rightPowerUp = 0;
+        }
+        if (mouse_check_button_pressed(mb_right)&amp;&amp;aux==1)
+        {
+            aux=2;
+            alarm[4] = 30;
+        }
+        break;
+    case 3:
     {
-        objPlayer.leftPowerUp = 0;
-        objPlayer.rightPowerUp = 1;
+        global.reroll = 2;
+        break;
     }
-    else
-    {
-        objPlayer.leftPowerUp = 0;
-        objPlayer.rightPowerUp = 0;
-    }
-    if (mouse_check_button_pressed(mb_right)&amp;&amp;aux==1)
-    {
-        aux=0;
-        alarm[4] = 30;
-    }
-    break;
-    
     default:
-    show_message("this option is not avaiable");
-    break;
+        show_message("this option is not avaiable");
+        break;
 
 }
 </string>

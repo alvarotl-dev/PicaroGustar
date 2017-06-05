@@ -28,6 +28,7 @@
             <string>Player = instance_place(x,y,objPlayer);
 Enemy = instance_place(x,y,objEnemyParent);
 Projectile = instance_place(x,y,objKillingThingParent);
+timeToAllowHits = 0;
 if (Player.invOn == 0)
 {
     timeToAllowHits = 60;
