@@ -58,7 +58,7 @@
     <instance objName="objInvWall" x="33" y="10" name="inst_832846FC" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPureDamage" x="248" y="114" name="inst_6B887E91" locked="0" code="" scaleX="8.5625" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
     <instance objName="objPureDamage" x="249" y="274" name="inst_4C26D71B" locked="0" code="" scaleX="8.625" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChange" x="567" y="342" name="inst_1C36B4C9" locked="0" code="" scaleX="0.689999997615814" scaleY="0.77999997138977" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChange" x="567" y="342" name="inst_1C36B4C9" locked="0" code="" scaleX="0.689999997615814" scaleY="0.779999971389771" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Atlas_1" x="96" y="96" w="32" h="32" xo="608" yo="288" id="10002204" name="inst_16EDADC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

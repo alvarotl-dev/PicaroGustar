@@ -144,13 +144,19 @@ global.reroll=5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Escape
+            <string>///Escape and cursor
 
 if (keyboard_check(vk_escape))
 {
     instance_create (0, 0, objTransitionIn);
     alarm[0] = 30;
 }
+
+//Cursor
+if(mouse_check_button(mb_any))
+    cursor_sprite = sprCursorClick;
+else 
+    cursor_sprite = sprCursor;
 </string>
           </argument>
         </arguments>
