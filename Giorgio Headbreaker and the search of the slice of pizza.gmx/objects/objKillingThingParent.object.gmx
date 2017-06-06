@@ -28,6 +28,7 @@
             <string>///Initial Variables
 velMod = 1; 
 DMG = 1;
+projType = 1;
 </string>
           </argument>
         </arguments>

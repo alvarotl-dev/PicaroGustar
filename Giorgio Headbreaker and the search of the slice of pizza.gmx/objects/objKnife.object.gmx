@@ -30,7 +30,7 @@ sp=10;
 direction=random_range(0, 360);
 image_angle=direction+90;
 bounceCount=0;
-
+projType = 1;
 </string>
           </argument>
         </arguments>
